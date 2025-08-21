@@ -1,0 +1,19 @@
+@import url('./fonts.scss');
+:root {
+    // colors
+    --clr-primary-dark-gey: #262E34;
+    --clr-primary-blue: #89BCD9;
+    --clr-creme-white: #F8F5EC;
+    --clr-secondary-light-grey: #262E341F;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Josefin Sans';
+    background-color: var(--clr-primary-dark-gey);
+}
