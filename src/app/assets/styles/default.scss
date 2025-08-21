@@ -1,9 +1,11 @@
 @import url('./fonts.scss');
+@import url('./components.scss');
 :root {
     // colors
     --clr-primary-dark-gey: #262E34;
     --clr-primary-blue: #89BCD9;
     --clr-creme-white: #F8F5EC;
+    --clr-secondary-creme-white: #f8f5ec12;
     --clr-secondary-light-grey: #262E341F;
 }
 
@@ -16,4 +18,10 @@ body {
     margin: 0;
     font-family: 'Josefin Sans';
     background-color: var(--clr-primary-dark-gey);
+    color: var(--clr-creme-white);
+    overflow-x: hidden;
+}
+
+.f-anta{
+    font-family: 'Anta';
 }
