@@ -1,10 +1,11 @@
 $breakpoints: (
+  xxs: 360px,   // small smartphones
   xs: 480px,   // smartphones
-  sm: 576px,   // small devices
+  sm: 600px,   // small devices
   md: 768px,   // tablets
   lg: 992px,   // small laptops
   xl: 1200px,  // large desktops
-  xxl: 1400px  // very large monitors
+  xxl: 1440px  // very large monitors
 );
 
 @mixin respond($breakpoint) {
@@ -15,6 +16,6 @@ $breakpoints: (
       @content;
     }
   } @else {
-    @warn "Breakpoint #{$breakpoint} existiert nicht!";
+    @warn "Breakpoint #{$breakpoint} does not exist!";
   }
 }
