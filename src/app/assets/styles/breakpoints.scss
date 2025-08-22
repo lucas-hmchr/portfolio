@@ -1,0 +1,20 @@
+$breakpoints: (
+  xs: 480px,   // smartphones
+  sm: 576px,   // small devices
+  md: 768px,   // tablets
+  lg: 992px,   // small laptops
+  xl: 1200px,  // large desktops
+  xxl: 1400px  // very large monitors
+);
+
+@mixin respond($breakpoint) {
+  $size: map-get($breakpoints, $breakpoint);
+
+  @if $size {
+    @media (max-width: $size) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint #{$breakpoint} existiert nicht!";
+  }
+}
