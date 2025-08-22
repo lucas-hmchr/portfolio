@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MenuBar } from "../menu-bar/menu-bar";
+import { BreakpointService } from '../services/breakpoint';
 
 @Component({
   selector: 'app-hero-section',
@@ -8,5 +9,9 @@ import { MenuBar } from "../menu-bar/menu-bar";
   styleUrl: './hero-section.scss'
 })
 export class HeroSection {
+  isMobile = false;
 
+  constructor(public bp: BreakpointService) {
+    
+  }
 }

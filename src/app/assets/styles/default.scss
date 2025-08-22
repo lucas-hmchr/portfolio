@@ -1,9 +1,9 @@
 @import url('./fonts.scss');
 @import url('./components.scss');
-@import url('./breakpoints.scss');
+@import url('./_breakpoints.scss');
 :root {
     // colors
-    --clr-primary-dark-gey: #262E34;
+    --clr-primary-dark-grey: #262E34;
     --clr-primary-blue: #89BCD9;
     --clr-creme-white: #F8F5EC;
     --clr-secondary-creme-white: #f8f5ec12;
@@ -18,11 +18,20 @@
 body {
     margin: 0;
     font-family: 'Josefin Sans';
-    background-color: var(--clr-primary-dark-gey);
+    background-color: var(--clr-primary-dark-grey);
     color: var(--clr-creme-white);
     overflow-x: hidden;
 }
 
 .f-anta{
     font-family: 'Anta';
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }

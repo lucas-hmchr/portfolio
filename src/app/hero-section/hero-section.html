@@ -1,14 +1,15 @@
 <section>
     <div class="content-wrapper">
+        @if (bp.device() === 'xl' || bp.device() === 'xxl') {
         <div class="subject container">
-            <img src="/images/hero_section/shape1.svg" alt="shape" class="shape">
             <img src="/images/hero_section/portrait.png" alt="portrait" class="portrait">
         </div>
         <div class="container">
             <div class="social-icons">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+                <a href="mailto:lucashamacher01@gmail.com" class="mail-link"></a>
+                <a href="https://github.com/lucas-hmchr" class="github-link"></a>
+                <a href="https://de.linkedin.com/in/lucas-hamacher-715ba927b?trk=people-guest_people_search-card"
+                    class="linkedin-link"></a>
             </div>
             <div class="logo">
                 <img src="/images/hero_section/logo_icon.svg" alt="">
@@ -22,6 +23,39 @@
 
             <button class="scroll-button"><img src="/images/hero_section/arrow_down.svg" alt=""></button>
         </div>
+        } @else if(bp.device() === 'lg' || bp.device() === 'md' || bp.device() === 'sm' || bp.device() === 'xs' || bp.device() === 'xxs') {
+        @if (bp.device() === 'lg') {
+        <div class="logo">
+            <img src="/images/hero_section/logo_icon.svg" alt="">
+            <span class="f-anta">L.Hamacher</span>
+            <span>developer</span>
+        </div>
+
+        <div class="social-icons">
+            <a href="mailto:lucashamacher01@gmail.com" class="mail-link"></a>
+            <a href="https://github.com/lucas-hmchr" class="github-link"></a>
+            <a href="https://de.linkedin.com/in/lucas-hamacher-715ba927b?trk=people-guest_people_search-card"
+                class="linkedin-link"></a>
+        </div>
+        }
+        <div class="container">
+
+            <div class="subject">
+                <img src="/images/hero_section/portrait.png" alt="portrait" class="portrait">
+            </div>
+
+            <div class="name-section">
+                <span class="f-anta name-headline">Lucas Hamacher</span>
+                <span class="fd-headline">FRONTEND DEVELOPER</span>
+            </div>
+
+            <button class="scroll-button"><img src="/images/hero_section/arrow_down.svg" alt=""></button>
+        </div>
+        }
+
     </div>
+
+    @if(bp.device() === 'lg' || bp.device() === 'xl' || bp.device() === 'xxl') {
     <app-menu-bar></app-menu-bar>
+    }
 </section>
