@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { HeroSection } from "../hero-section/hero-section";
 import { MobileNav } from "../mobile-nav/mobile-nav";
 import { BreakpointService } from '../services/breakpoint';
+import { WhyMeSection } from '../why-me-section/why-me-section';
 
 
 @Component({
   selector: 'app-home-view',
-  imports: [HeroSection, MobileNav],
+  imports: [HeroSection, MobileNav, WhyMeSection],
   templateUrl: './home-view.html',
   styleUrl: './home-view.scss'
 })

@@ -1,0 +1,28 @@
+section {
+    width: 100%;
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    >.content-container {
+
+        >h1 {
+            text-align: center;
+            color: var(--clr-primary-blue);
+            font-family: 'Anta';
+            font-size: 60px;
+        }
+
+        > div {
+            display: flex;
+            margin-top: 64px;
+
+            > div{
+                flex: 1;
+            }
+        }
+    }
+
+}
