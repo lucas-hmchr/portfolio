@@ -1,3 +1,5 @@
+@import './../assets/styles/_breakpoints.scss';
+
 header {
     height: 120px;
     width: 100vw;
@@ -5,7 +7,7 @@ header {
     top: 0;
     left: 0;
     background-color: var(--clr-primary-dark-grey);
-    z-index: 99999;
+    z-index: 999;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,7 +34,149 @@ header {
 button {
     height: 100%;
 
-    > img{
+    >img {
         height: 40px;
+    }
+}
+
+.nav-popup-overlay {
+    width: 100vw;
+    height: 100dvh;
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.205);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    backdrop-filter: blur(8px);
+
+    >.menu-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('./../../../public/images/hero_section/shape2.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 80%;
+        aspect-ratio: 345/360;
+
+        >nav {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            flex-direction: column;
+            font-family: 'Josefin Sans';
+
+            >a {
+                text-decoration: none;
+                color: var(--clr-primary-dark-grey);
+                font-size: 24px;
+                text-align: center;
+            }
+
+            >div {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                >button {
+                    font-family: 'Josefin Sans';
+                    font-size: 20px;
+                    color: var(--clr-primary-dark-grey);
+                }
+            }
+        }
+    }
+}
+
+.close-button {
+    position: absolute;
+    top: 40px;
+    right: 32px;
+    height: fit-content;
+    width: 40px;
+    aspect-ratio: 1/1;
+}
+
+@include respond(md) {
+    .nav-popup-overlay {
+
+        >.menu-container {
+
+            >nav {
+                gap: 40px;
+
+                >a {
+                    font-size: 40px;
+                }
+
+                >div {
+
+                    >button {
+                        font-size: 32px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include respond(sm) {
+    .nav-popup-overlay {
+
+        >.menu-container {
+
+            >nav {
+                gap: 32px;
+
+                >a {
+                    font-size: 32px;
+                }
+
+                >div {
+
+                    >button {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include respond(xs) {
+    .nav-popup-overlay {
+
+        >.menu-container {
+             width: 80%;
+
+            >nav {
+                gap: 24px;
+
+                >a {
+                    font-size: 24px;
+                }
+
+                >div {
+
+                    >button {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include respond(xs) {
+    .nav-popup-overlay {
+
+        >.menu-container {
+             width: 90%;
+
+        }
     }
 }

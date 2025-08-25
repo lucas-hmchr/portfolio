@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './mobile-nav.scss'
 })
 export class MobileNav {
+  showNavMenu: boolean = false;
 
+  toggleNavMenu() {
+    this.showNavMenu = !this.showNavMenu
+  }
 }

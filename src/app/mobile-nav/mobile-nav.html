@@ -4,7 +4,29 @@
         <span class="f-anta">L.Hamacher</span>
         <span>developer</span>
     </div>
-    <button>
+    <button (click)="toggleNavMenu()">
         <img src="/images/hero_section/hamburger_menu.svg" alt="">
     </button>
 </header>
+
+@if (this.showNavMenu) {
+<div class="nav-popup-overlay" (click)="toggleNavMenu()">
+    <div class="menu-container" (click)="$event.stopPropagation()">
+        <nav>
+            <a href="">Why me</a>
+            <a href="">Skills</a>
+            <a href="">Projects</a>
+            <a href="">Contact</a>
+            <div>
+                <button>DE</button>
+                <button>EN</button>
+            </div>
+        </nav>
+    </div>
+    <button class="close-button">
+        <img src="/images/hero_section/menu_cross.svg" alt="">
+    </button>
+</div>
+
+
+}
