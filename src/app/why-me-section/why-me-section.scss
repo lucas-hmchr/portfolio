@@ -1,3 +1,5 @@
+@import './../assets/styles/_breakpoints.scss';
+
 section {
     width: 100%;
     padding: 80px;
@@ -29,7 +31,6 @@ section {
             }
         }
     }
-
 }
 
 .content-left {
@@ -47,7 +48,7 @@ section {
     gap: 16px;
 
     >p {
-        text-align: left;
+        text-align: justify;
         display: block;
         line-height: 120%;
         font-size: 18px;
@@ -58,11 +59,114 @@ section {
     color: var(--clr-primary-blue);
     border-radius: 100px;
     border: 1px solid var(--clr-primary-blue);
-    padding: 8px 16px;
+    padding: 16px 24px;
     font-family: 'Josefin Sans';
     font-size: 18px;
 
     &:hover {
         background-color: var(--clr-secondary-creme-white);
     }
+}
+
+@include respond(xl) {
+    section {
+        padding: 40px;
+        padding-top: 80px;
+    }
+}
+
+@include respond(lg) {
+    section {
+
+        >.content-container {
+
+            >div {
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+    }
+
+    .content-right {
+        max-width: 500px;
+    }
+
+    .contact-button {
+        display: none;
+    }
+}
+
+
+@include respond(sm) {
+    section {
+        padding: 20px;
+
+        >.content-container {
+
+            >h1 {
+                font-size: 48px;
+            }
+        }
+    }
+
+    .content-left {
+        font-size: 24px;
+    }
+
+    .content-right {
+
+        >p {
+            font-size: 16px;
+            text-align: left;
+        }
+    }
+}
+
+@include respond(xs) {
+    section {
+
+        >.content-container {
+
+            >h1 {
+                font-size: 36px;
+            }
+        }
+    }
+
+    .content-left {
+        font-size: 20px;
+
+        > img{
+            width: 48px;
+        }
+    }
+
+    .content-right {
+
+        >p {
+            font-size: 16px;
+        }
+    }
+}
+
+
+@include respond(xxs) {
+    section {
+
+        >.content-container {
+
+            >h1 {
+                font-size: 32px;
+            }
+        }
+    }
+
+    .content-left {
+        font-size: 18px;
+
+        > img{
+            width: 40px;
+        }
+    }
+
 }
