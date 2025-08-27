@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { HeroSection } from "../hero-section/hero-section";
-import { MobileNav } from "../mobile-nav/mobile-nav";
-import { BreakpointService } from '../services/breakpoint';
-import { WhyMeSection } from '../why-me-section/why-me-section';
+import { HeroSection } from "../../content/hero-section/hero-section";
+import { MobileNav } from "../../shared/mobile-nav/mobile-nav";
+import { BreakpointService } from '../../../services/breakpoint';
+import { WhyMeSection } from '../../content/why-me-section/why-me-section';
 
 
 @Component({

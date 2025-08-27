@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { MenuBar } from "../menu-bar/menu-bar";
-import { BreakpointService } from '../services/breakpoint';
+import { MenuBar } from "../../shared/menu-bar/menu-bar";
+import { BreakpointService } from '../../../services/breakpoint';
 
 @Component({
   selector: 'app-hero-section',

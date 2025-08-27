@@ -1,4 +1,4 @@
-@import './../assets/styles/_breakpoints.scss';
+@import './../../../assets/styles/breakpoints';
 
 section {
     height: 100dvh;
@@ -28,13 +28,13 @@ section {
         }
 
         >.subject {
-            background-image: url('./../../../public/images/hero_section/shape2.svg');
+            background-image: url('./../../../../../public/images/hero_section/shape2.svg');
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
 
             &:hover {
-                background-image: url('./../../../public/images/hero_section/shape1.svg');
+                background-image: url('./../../../../../public/images/hero_section/shape1.svg');
             }
 
             >img {
@@ -102,26 +102,26 @@ section {
     }
 
     >.mail-link {
-        background-image: url('./../../../public/images/social_icons/mail/mail3.svg');
+        background-image: url('./../../../../../public/images/social_icons/mail/mail3.svg');
 
         &:hover {
-            background-image: url('./../../../public/images/social_icons/mail/mail4.svg');
+            background-image: url('./../../../../../public/images/social_icons/mail/mail4.svg');
         }
     }
 
     >.github-link {
-        background-image: url('./../../../public/images/social_icons/github/github3.svg');
+        background-image: url('./../../../../../public/images/social_icons/github/github3.svg');
 
         &:hover {
-            background-image: url('./../../../public/images/social_icons/github/github4.svg');
+            background-image: url('./../../../../../public/images/social_icons/github/github4.svg');
         }
     }
 
     >.linkedin-link {
-        background-image: url('./../../../public/images/social_icons/linkedin/linkedin3.svg');
+        background-image: url('./../../../../../public/images/social_icons/linkedin/linkedin3.svg');
 
         &:hover {
-            background-image: url('./../../../public/images/social_icons/linkedin/linkedin4.svg');
+            background-image: url('./../../../../../public/images/social_icons/linkedin/linkedin4.svg');
         }
     }
 }
@@ -189,7 +189,7 @@ section {
                 gap: 24px;
 
                 >.subject {
-                    background-image: url('./../../../public/images/hero_section/shape2.svg');
+                    background-image: url('./../../../../../public/images/hero_section/shape2.svg');
                     background-repeat: no-repeat;
                     background-position: bottom;
                     background-size: contain;
@@ -207,7 +207,7 @@ section {
                     aspect-ratio: 298/381 !important;
 
                     &:hover {
-                        background-image: url('./../../../public/images/hero_section/shape1.svg');
+                        background-image: url('./../../../../../public/images/hero_section/shape1.svg');
                     }
 
                     & .portrait {
