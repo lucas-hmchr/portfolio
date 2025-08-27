@@ -10,6 +10,8 @@ export class MobileNav {
   showNavMenu: boolean = false;
 
   toggleNavMenu() {
-    this.showNavMenu = !this.showNavMenu
+    const body = document.querySelector('body');
+    this.showNavMenu = !this.showNavMenu;
+    this.showNavMenu ? body?.classList.add('no-scroll') : body?.classList.remove('no-scroll');
   }
 }
