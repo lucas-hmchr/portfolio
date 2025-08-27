@@ -11,13 +11,6 @@ section {
     >.content-container {
         max-width: 1000px;
 
-        >h1 {
-            text-align: center;
-            color: var(--clr-primary-blue);
-            font-family: 'Anta';
-            font-size: 60px;
-        }
-
         >div {
             display: flex;
             align-items: flex-start;
@@ -100,13 +93,6 @@ section {
 @include respond(sm) {
     section {
         padding: 20px;
-
-        >.content-container {
-
-            >h1 {
-                font-size: 48px;
-            }
-        }
     }
 
     .content-left {
@@ -123,20 +109,10 @@ section {
 }
 
 @include respond(xs) {
-    section {
-
-        >.content-container {
-
-            >h1 {
-                font-size: 36px;
-            }
-        }
-    }
-
     .content-left {
         font-size: 20px;
 
-        > img{
+        >img {
             width: 48px;
         }
     }
@@ -151,22 +127,11 @@ section {
 
 
 @include respond(xxs) {
-    section {
-
-        >.content-container {
-
-            >h1 {
-                font-size: 32px;
-            }
-        }
-    }
-
     .content-left {
         font-size: 18px;
 
-        > img{
+        >img {
             width: 40px;
         }
     }
-
 }

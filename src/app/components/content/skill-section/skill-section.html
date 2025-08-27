@@ -1,0 +1,26 @@
+<section>
+    <div class="content-container">
+        <h1>My Skills</h1>
+        <div>
+            <div class="content-left">
+                @for (icon of icons; track $index) {
+                <div class="tech-skill">
+                    <img [src]="'/images/skill_icons/' + icon + '.svg'" [alt]="icon + ' icon'" class="tech-icon">
+                    <span class="tech-name">{{ icon }}</span>
+                </div>
+
+                }
+            </div>
+            <div class="content-right">
+                <p>I am passionate about coding because it combines analytical thinking with creativity. I enjoy
+                    breaking down complex problems into clear solutions and turning ideas into real, working
+                    applications. Coding challenges me to stay persistent, to keep learning, and to continuously
+                    improve. I also value collaboration — sharing knowledge, working with others, and building something
+                    greater together. For me, coding is not just about writing code, but about solving problems and
+                    creating meaningful solutions.
+                </p>
+                <button class="contact-button">Let's talk</button>
+            </div>
+        </div>
+    </div>
+</section>

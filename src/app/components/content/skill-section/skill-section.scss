@@ -1,0 +1,72 @@
+@import './../../../assets/styles/breakpoints';
+
+section {
+    width: 100%;
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    >.content-container {
+        max-width: 1000px;
+
+        >div {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: row;
+            margin-top: 64px;
+            gap: 32px;
+
+            >div {
+                flex: 1;
+                height: 100%;
+            }
+
+        }
+    }
+}
+
+.content-left {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 56px;
+    font-size: 30px;
+}
+
+.tech-skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 60px;
+
+    >img{
+        width: 60px;
+        aspect-ratio: 1/1;
+    }
+
+    >span{
+        font-size: 18px;
+        color: var(--clr-primary-blue);
+        max-width: 80px;
+        text-align: center;
+    }
+}
+
+.content-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+    gap: 16px;
+
+    >p {
+        text-align: justify;
+        display: block;
+        line-height: 120%;
+        font-size: 18px;
+    }
+}
+

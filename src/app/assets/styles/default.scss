@@ -1,6 +1,7 @@
+@use './_breakpoints.scss' as *;
 @import url('./fonts.scss');
 @import url('./components.scss');
-@import url('./_breakpoints.scss');
+
 :root {
     // colors
     --clr-primary-dark-grey: #262E34;
@@ -23,7 +24,14 @@ body {
     overflow-x: hidden;
 }
 
-.f-anta{
+h1 {
+    text-align: center;
+    color: var(--clr-primary-blue);
+    font-family: 'Anta';
+    font-size: 60px;
+}
+
+.f-anta {
     font-family: 'Anta';
 }
 
@@ -36,6 +44,30 @@ button {
     cursor: pointer;
 }
 
-.no-scroll{
+.no-scroll {
     overflow: hidden;
+}
+
+@include respond(xl) {}
+
+@include respond(lg) {}
+
+@include respond(md) {}
+
+@include respond(sm) {
+    h1 {
+        font-size: 48px;
+    }
+}
+
+@include respond(xs) {
+    h1 {
+        font-size: 36px;
+    }
+}
+
+@include respond(xxs) {
+    h1 {
+        font-size: 32px;
+    }
 }
