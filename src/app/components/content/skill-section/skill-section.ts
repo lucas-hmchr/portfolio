@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
 export class SkillSection {
   icons: string[] = [
     'Angular',
+    'Vue',
     'TypeScript',
     'JavaScript',
     'HTML',
