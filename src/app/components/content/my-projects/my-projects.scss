@@ -1,0 +1,29 @@
+section {
+    width: 100%;
+    max-width: 1300px;
+    margin-inline: auto;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-selection-header {
+    display: flex;
+
+    >div {
+        padding: 32px;
+        border-radius: 16px 16px 0px 0px;
+        background-color: transparent;
+        color: var(--clr-primary-blue);
+    }
+
+    >.project-selected {
+        color: white;
+        background-color: var(--clr-primary-blue-transparent);
+    }
+}

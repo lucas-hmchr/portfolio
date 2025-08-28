@@ -1,0 +1,19 @@
+<section>
+    <h1>My Projects</h1>
+    <div class="content-container">
+        <div class="project-selection-header">
+            @for (project of projects; track $index) {
+            <div [class.project-selected]="selectedProject === project.id" (click)="selectProject(project.id)">
+                <span>
+                    {{ $index + 1 }}. {{ project.name }}
+                </span>
+            </div>
+            }
+        </div>
+        <div class="project-body">
+            <div class="project-content">
+
+            </div>
+        </div>
+    </div>
+</section>
