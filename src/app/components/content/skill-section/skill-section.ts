@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BreakpointService } from '../../../services/breakpoint';
 
 @Component({
   selector: 'app-skill-section',
@@ -19,5 +20,15 @@ export class SkillSection {
     'Git',
     'Material Design',
     'Scrum',
+    'Wordpress',
   ]
+
+  learningStack: string[] = [
+    'Angular',
+    'Vue',
+  ]
+
+  constructor(public bp: BreakpointService) {
+
+  }
 }

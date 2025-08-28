@@ -35,19 +35,19 @@ section {
     font-size: 30px;
 }
 
-.tech-skill{
+.tech-skill {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 8px;
     width: 60px;
 
-    >img{
+    >img {
         width: 60px;
         aspect-ratio: 1/1;
     }
 
-    >span{
+    >span {
         font-size: 18px;
         color: var(--clr-primary-blue);
         max-width: 80px;
@@ -58,15 +58,176 @@ section {
 .content-right {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: end;
-    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    background-image: url('./../../../../../public/images/skill_section/skill_elipse.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    aspect-ratio: 1/1;
+
+    >div {
+        display: flex;
+        gap: 32px;
+    }
+
+    >span {
+        font-size: 18px;
+    }
 
     >p {
-        text-align: justify;
+        text-align: center;
         display: block;
         line-height: 120%;
         font-size: 18px;
+        max-width: 70%;
     }
 }
 
+.learning-skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 32px;
+
+    >img {
+        width: 100%;
+        aspect-ratio: 1/1;
+    }
+
+    >span {
+        font-size: 14px;
+        max-width: 80px;
+        text-align: center;
+    }
+}
+
+
+
+@include respond(xl) {
+    .content-left {
+        gap: 48px;
+    }
+}
+
+@include respond(lg) {
+    section {
+
+        >.content-container {
+
+            >div {
+                flex-direction: column;
+
+                >div {
+                    max-width: 500px;
+                }
+            }
+        }
+    }
+
+    .content-left {
+        justify-content: center;
+    }
+
+}
+
+// @include respond(md) {}
+
+@include respond(sm) {
+    section {
+        padding: 20px;
+
+        >.content-container {
+            >div {
+                gap: 64px;
+            }
+        }
+    }
+
+    .tech-skill {
+        width: 40px;
+        gap: 8px;
+
+        >img {
+            width: 100%;
+            aspect-ratio: 1/1;
+        }
+
+        >span {
+            font-size: 16px;
+            display: none;
+        }
+    }
+
+    .content-right-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+
+        >span {
+            color: var(--clr-primary-blue);
+            font-size: 18px;
+        }
+
+        >div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 32px;
+
+            >p {
+                flex: 0.7;
+            }
+
+            >div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 16px;
+                background-image: url('./../../../../../public/images/skill_section/skill_elipse_mobile.svg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                flex: 0.3;
+                aspect-ratio: 113/96;
+            }
+        }
+    }
+}
+
+
+@include respond(xs) {
+    .content-right-mobile {
+
+        >div {
+            gap: 16px;
+
+            >p {
+                flex: 0.6;
+            }
+
+            >div {
+                flex: 0.4;
+            }
+        }
+    }
+}
+
+@include respond(xxs) {
+    .content-right-mobile {
+
+        >div {
+            flex-direction: column;
+
+            >p {
+                flex: 0.7;
+            }
+
+            >div {
+                width: 50%;
+            }
+        }
+    }
+}

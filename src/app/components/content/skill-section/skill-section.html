@@ -8,16 +8,46 @@
                     <img [src]="'/images/skill_icons/' + icon + '.svg'" [alt]="icon + ' icon'" class="tech-icon">
                     <span class="tech-name">{{ icon }}</span>
                 </div>
-
                 }
             </div>
+            @if (bp.device() === 'sm' || bp.device() === 'xs' || bp.device() === 'xxs') {
+            <div class="content-right-mobile">
+                <span>What I am currently learning</span>
+                <div>
+                    <p>I am currently imporving my skills in Vue.js and Angular. My focus is on the framework specific
+                        functionalities. I'm also expanding my skills with the matching design frameworks: Vuetify and
+                        Material Design.
+                    </p>
+                    <div>
+                        @for (icon of learningStack; track $index) {
+                        <div class="learning-skill">
+                            <img [src]="'/images/skill_icons/' + icon + '.svg'" [alt]="icon + ' icon'"
+                                class="tech-icon">
+                            <span class="tech-name">{{ icon }}</span>
+                        </div>
+                        }
+                    </div>
+                </div>
+            </div>
+            }
+            @else {
             <div class="content-right">
-
-                <p>I am currently improving my skills in Vue.js and Angular. My focus is on the framework specific
-                    funktionalities. I'm also expanding my skills with the matching design frameworks: Vuetify and
+                <span>I am currently improving my</span>
+                <div>
+                    @for (icon of learningStack; track $index) {
+                    <div class="learning-skill">
+                        <img [src]="'/images/skill_icons/' + icon + '.svg'" [alt]="icon + ' icon'" class="tech-icon">
+                        <span class="tech-name">{{ icon }}</span>
+                    </div>
+                    }
+                </div>
+                <p>skills in Vue.js and Angular. My focus is on the framework specific
+                    functionalities. I'm also expanding my skills with the matching design frameworks: Vuetify and
                     Material Design.
                 </p>
             </div>
+            }
+
         </div>
     </div>
 </section>
