@@ -103,6 +103,23 @@ section {
     }
 }
 
+.contact-button {
+    color: var(--clr-primary-dark-grey);
+    border-radius: 100px;
+    border: 1px solid var(--clr-primary-dark-grey);
+    padding: 16px 24px;
+    font-family: 'Josefin Sans';
+    font-size: 18px;
+    margin-inline: auto;
+    background-color: var(--clr-primary-blue);
+
+    &:hover {
+        background-color: var(--clr-secondary-dark-grey);
+        color: var(--clr-primary-blue);
+        border: 1px solid var(--clr-primary-blue);
+    }
+}
+
 
 
 @include respond(xl) {

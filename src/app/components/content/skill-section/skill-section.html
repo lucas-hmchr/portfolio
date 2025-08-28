@@ -47,7 +47,10 @@
                 </p>
             </div>
             }
-
+            @if (bp.device() === 'lg' || bp.device() === 'md' || bp.device() === 'sm' || bp.device() === 'xs' ||
+            bp.device() === 'xxs') {
+            <button class="contact-button">Let's talk</button>
+            }
         </div>
     </div>
 </section>
