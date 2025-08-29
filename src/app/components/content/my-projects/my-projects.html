@@ -1,18 +1,39 @@
 <section>
-    <h1>My Projects</h1>
     <div class="content-container">
+        <h1>My Projects</h1>
         <div class="project-selection-header">
             @for (project of projects; track $index) {
-            <div [class.project-selected]="selectedProject === project.id" (click)="selectProject(project.id)">
-                <span>
+            <div [class.project-selected]="selectedProject.id === project.id" (click)="selectProject(project)">
+                <h3>
                     {{ $index + 1 }}. {{ project.name }}
-                </span>
+                </h3>
             </div>
             }
         </div>
         <div class="project-body">
-            <div class="project-content">
-
+            <div class="left-content">
+                @for (description of selectedProject.descriptions; track $index) {
+                <div class="project-description-container">
+                    <img src="/images/skill_section/project_point_ellipse.svg" alt="">
+                    <div>
+                        <h4>{{ description.title }}</h4>
+                        <p>{{ description.text }}</p>
+                    </div>
+                </div>
+                }
+            </div>
+            <div class="right-content">
+                <span>Technologies</span>
+                <div class="tech-icons">
+                    @for (tech of selectedProject.technologies; track $index) {
+                    <img [src]="'/images/skill_icons/' + tech + '.svg'">
+                    }
+                </div>
+                <img [src]="'/images/project_images/' + selectedProject.img" alt="">
+                <div class="project-links">
+                    <a class="live-test-button">Live Test</a>
+                    <a class="github-button">GitHub</a>
+                </div>
             </div>
         </div>
     </div>
