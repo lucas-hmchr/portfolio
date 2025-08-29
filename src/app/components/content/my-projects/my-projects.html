@@ -3,11 +3,19 @@
         <h1>My Projects</h1>
         <div class="project-selection-header">
             @for (project of projects; track $index) {
+            @if (bp.device() === 'sm' || bp.device() === 'xs' || bp.device() === 'xxs') {
+            <div [class.project-selected]="selectedProject.id === project.id" (click)="selectProject(project)">
+                <h3>
+                    {{ $index + 1 }}. Project
+                </h3>
+            </div>
+            } @else {
             <div [class.project-selected]="selectedProject.id === project.id" (click)="selectProject(project)">
                 <h3>
                     {{ $index + 1 }}. {{ project.name }}
                 </h3>
             </div>
+            }
             }
         </div>
         <div class="project-body">
@@ -21,8 +29,17 @@
                     </div>
                 </div>
                 }
+                @if (bp.device() === 'xxs' || bp.device() === 'xs' || bp.device() === 'sm') {
+                <div class="project-links">
+                    <a [href]="selectedProject.liveLink" class="live-test-button">Live Test</a>
+                    <a [href]="selectedProject.githubLink" class="github-button">GitHub</a>
+                </div>
+                }
             </div>
             <div class="right-content">
+                @if (bp.device() === 'xxs' || bp.device() === 'xs' || bp.device() === 'sm') {
+                    <h3 class="project-name">{{ selectedProject.name }}</h3>
+                }
                 <span>Technologies</span>
                 <div class="tech-icons">
                     @for (tech of selectedProject.technologies; track $index) {
@@ -30,10 +47,13 @@
                     }
                 </div>
                 <img [src]="'/images/project_images/' + selectedProject.img" alt="">
+                @if (bp.device() === 'xxl' || bp.device() === 'xl' || bp.device() === 'lg' || bp.device() === 'md') {
                 <div class="project-links">
-                    <a class="live-test-button">Live Test</a>
-                    <a class="github-button">GitHub</a>
+                    <a [href]="selectedProject.liveLink" class="live-test-button">Live Test</a>
+                    <a [href]="selectedProject.githubLink" class="github-button">GitHub</a>
                 </div>
+                }
+
             </div>
         </div>
     </div>
