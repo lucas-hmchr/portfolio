@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FeedbackContainer } from './feedback-container/feedback-container';
 import type { Feedback } from '../../../interfaces/feedback';
+import { BreakpointService } from '../../../services/breakpoint';
 
 @Component({
   selector: 'app-feedback-section',
@@ -36,5 +37,9 @@ export class FeedbackSection {
       project: "Weather Dashboard"
     }
   ]
+
+  constructor(public bp: BreakpointService) {
+
+  }
 
 }
