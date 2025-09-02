@@ -1,0 +1,73 @@
+@import './../../../../assets/styles/breakpoints';
+
+div {
+    background-image: url('./../../../../../../public/images/feedback_section/feedback_ellipse.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 8px;
+    padding-inline: 64px;
+
+    >h3 {
+        font-weight: 600;
+        font-size: 26px;
+    }
+
+    & span {
+        font-size: 18px;
+    }
+
+    & .project-name {
+        color: var(--clr-primary-blue);
+    }
+
+    >p {
+        margin-block: 32px;
+        line-height: 120%;
+        max-width: 300px;
+    }
+
+    >a {
+        color: var(--clr-primary-blue);
+        font-size: 16px;
+    }
+}
+
+
+@include respond(lg) {
+    div {
+        height: 400px;
+        aspect-ratio: 1/1;
+        padding-inline: 16px;
+        gap: 0px;
+        scroll-snap-align: center;
+
+        >h3 {
+            font-size: 24px;
+        }
+
+        & span {
+            font-size: 18px;
+        }
+
+        & .project-name {
+            color: var(--clr-primary-blue);
+        }
+
+        >p {
+            font-size: 16px;
+        }
+
+        >a {
+            font-size: 16px;
+        }
+    }
+
+
+}
