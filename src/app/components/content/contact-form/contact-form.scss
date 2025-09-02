@@ -1,0 +1,42 @@
+@import './../../../assets/styles/breakpoints';
+
+section {
+    width: 100%;
+    margin-inline: auto;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-container {
+    display: flex;
+    margin-top: 80px;
+
+}
+
+.information-container {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+
+    >p {
+        flex: 0.5;
+    }
+
+    >.contact-information {
+        flex: 0.5;
+        display: flex;
+        flex-direction: column;
+
+        >span {
+            display: flex;
+            align-items: center;
+            & img {
+                width: 32px;
+            }
+        }
+
+
+    }
+}
