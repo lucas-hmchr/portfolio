@@ -5,11 +5,12 @@ import { BreakpointService } from '../../../services/breakpoint';
 import { WhyMeSection } from '../../content/why-me-section/why-me-section';
 import { SkillSection } from '../../content/skill-section/skill-section';
 import { MyProjects } from '../../content/my-projects/my-projects';
+import { FeedbackSection } from '../../content/feedback-section/feedback-section';
 
 
 @Component({
   selector: 'app-home-view',
-  imports: [HeroSection, MobileNav, WhyMeSection, SkillSection, MyProjects],
+  imports: [HeroSection, MobileNav, WhyMeSection, SkillSection, MyProjects, FeedbackSection],
   templateUrl: './home-view.html',
   styleUrl: './home-view.scss'
 })
