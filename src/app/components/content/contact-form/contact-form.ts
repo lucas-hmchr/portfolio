@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BreakpointService } from '../../../services/breakpoint';
 
 @Component({
   selector: 'app-contact-form',
@@ -8,4 +9,7 @@ import { Component } from '@angular/core';
 })
 export class ContactForm {
 
+  constructor(public bp: BreakpointService){
+    
+  }
 }
