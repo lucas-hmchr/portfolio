@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BreakpointService } from '../../../services/breakpoint';
 
 @Component({
   selector: 'app-footer',
@@ -8,4 +9,7 @@ import { Component } from '@angular/core';
 })
 export class Footer {
 
+  constructor(public bp: BreakpointService){
+    
+  }
 }
