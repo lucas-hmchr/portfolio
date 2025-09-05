@@ -1,12 +1,14 @@
+@import './../../../assets/styles/breakpoints';
+
 footer {
     height: 200px;
     background-color: var(--clr-primary-blue);
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 60px 80px 60px 80px ;
+    padding: 60px 80px 60px 80px;
 
-    >div{
+    >div {
         width: 185px;
     }
 
@@ -38,36 +40,124 @@ footer {
         }
     }
 
-    .social-icons{
+    .social-icons {
         display: flex;
         gap: 8px;
         align-items: center;
-        >a{
+        justify-content: flex-end;
+
+        >a {
             width: 30px;
             aspect-ratio: 1/1;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
         }
 
-        .github{
+        .github {
             background-image: url('./../../../../../public/images/social_icons/github/github5.svg');
 
-            &:hover{
+            &:hover {
                 background-image: url('./../../../../../public/images/social_icons/github/github1.svg');
             }
         }
 
-        .mail{
+        .mail {
             background-image: url('./../../../../../public/images/social_icons/mail/mail5.svg');
 
-            &:hover{
+            &:hover {
                 background-image: url('./../../../../../public/images/social_icons/mail/mail1.svg');
             }
         }
 
-        .linkedin{
+        .linkedin {
             background-image: url('./../../../../../public/images/social_icons/linkedin/linkedin5.svg');
 
-            &:hover{
+            &:hover {
                 background-image: url('./../../../../../public/images/social_icons/linkedin/linkedin1.svg');
+            }
+        }
+    }
+}
+
+
+@include respond(lg) {
+    footer {
+        padding: 60px 40px;
+    }
+}
+
+@include respond(md) {
+    footer {
+        height: 240px;
+        flex-direction: column;
+        align-items: center;
+        padding: 24px;
+        justify-content: space-between;
+
+        >div {
+            width: auto;
+        }
+
+        .legal-notice-container {
+            flex-direction: row;
+            justify-content: center;
+            gap: 32px;
+
+            >a {
+                text-decoration: none;
+                color: var(--clr-primary-dark-grey);
+            }
+        }
+
+        .social-icons {
+            justify-content: center;
+
+            >a {
+                width: 32px;
+            }
+
+            .github {
+                background-image: url('./../../../../../public/images/social_icons/github/github2.svg');
+
+                &:hover {
+                    background-image: url('./../../../../../public/images/social_icons/github/github2.svg');
+                }
+            }
+
+            .mail {
+                background-image: url('./../../../../../public/images/social_icons/mail/mail2.svg');
+
+                &:hover {
+                    background-image: url('./../../../../../public/images/social_icons/mail/mail2.svg');
+                }
+            }
+
+            .linkedin {
+                background-image: url('./../../../../../public/images/social_icons/linkedin/linkedin2.svg');
+
+                &:hover {
+                    background-image: url('./../../../../../public/images/social_icons/linkedin/linkedin2.svg');
+                }
+            }
+        }
+    }
+
+}
+
+@include respond(xxs) {
+    footer {
+        height: 260px;
+
+        .legal-notice-container {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+
+            >a {
+                text-decoration: none;
+                color: var(--clr-primary-dark-grey);
             }
         }
     }
