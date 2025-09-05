@@ -7,11 +7,12 @@ import { SkillSection } from '../../content/skill-section/skill-section';
 import { MyProjects } from '../../content/my-projects/my-projects';
 import { FeedbackSection } from '../../content/feedback-section/feedback-section';
 import { ContactForm } from '../../content/contact-form/contact-form';
+import { Footer } from '../../shared/footer/footer';
 
 
 @Component({
   selector: 'app-home-view',
-  imports: [HeroSection, MobileNav, WhyMeSection, SkillSection, MyProjects, FeedbackSection, ContactForm],
+  imports: [HeroSection, MobileNav, WhyMeSection, SkillSection, MyProjects, FeedbackSection, ContactForm, Footer],
   templateUrl: './home-view.html',
   styleUrl: './home-view.scss'
 })
