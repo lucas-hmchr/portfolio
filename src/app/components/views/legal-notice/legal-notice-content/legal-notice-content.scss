@@ -1,0 +1,31 @@
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: flex-start;
+    padding: 80px;
+
+    .content-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 16px;
+        gap: 32px;
+
+        >div {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            li{
+                line-height: 120%;
+            }
+
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,7 @@
+@if(bp.device() === 'md' || bp.device() === 'sm' || bp.device() === 'xs' || bp.device() === 'xxs') {
+<app-mobile-nav></app-mobile-nav>
+} @else {
+<app-menu-bar></app-menu-bar>
+}
+<app-legal-notice-content></app-legal-notice-content>
+<app-footer></app-footer>
