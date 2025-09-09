@@ -1,4 +1,4 @@
-<section>
+<section id="heroSection">
     <div class="content-wrapper">
         @if (bp.device() === 'xl' || bp.device() === 'xxl') {
         <div class="subject container">
@@ -21,7 +21,7 @@
                 <span class="fd-headline">FRONTEND DEVELOPER</span>
             </div>
 
-            <button class="scroll-button"><img src="/images/hero_section/arrow_down.svg" alt=""></button>
+            <a href="#whyMeSection"><button class="scroll-button"><img src="/images/hero_section/arrow_down.svg" alt=""></button></a>
         </div>
         } @else if(bp.device() === 'lg' || bp.device() === 'md' || bp.device() === 'sm' || bp.device() === 'xs' || bp.device() === 'xxs') {
         @if (bp.device() === 'lg') {
@@ -55,7 +55,7 @@
 
     </div>
 
-    @if(bp.device() === 'lg' || bp.device() === 'xl' || bp.device() === 'xxl') {
+    <!-- @if(bp.device() === 'lg' || bp.device() === 'xl' || bp.device() === 'xxl') {
     <app-menu-bar></app-menu-bar>
-    }
+    } -->
 </section>

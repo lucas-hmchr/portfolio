@@ -8,11 +8,12 @@ import { MyProjects } from '../../content/my-projects/my-projects';
 import { FeedbackSection } from '../../content/feedback-section/feedback-section';
 import { ContactForm } from '../../content/contact-form/contact-form';
 import { Footer } from '../../shared/footer/footer';
+import { MenuBar } from "../../shared/menu-bar/menu-bar";
 
 
 @Component({
   selector: 'app-home-view',
-  imports: [HeroSection, MobileNav, WhyMeSection, SkillSection, MyProjects, FeedbackSection, ContactForm, Footer],
+  imports: [HeroSection, MobileNav, WhyMeSection, SkillSection, MyProjects, FeedbackSection, ContactForm, Footer, MenuBar],
   templateUrl: './home-view.html',
   styleUrl: './home-view.scss'
 })

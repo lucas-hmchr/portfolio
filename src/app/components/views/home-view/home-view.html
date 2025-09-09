@@ -1,10 +1,16 @@
 @if(bp.device() === 'md' || bp.device() === 'sm' || bp.device() === 'xs' || bp.device() === 'xxs') {
 <app-mobile-nav></app-mobile-nav>
 }
-<app-hero-section></app-hero-section>
-<app-why-me-section></app-why-me-section>
-<app-skill-section></app-skill-section>
-<app-my-projects></app-my-projects>
-<app-feedback-section></app-feedback-section>
-<app-contact-form></app-contact-form>
+<main>
+    <app-hero-section></app-hero-section>
+    @if(bp.device() === 'lg' || bp.device() === 'xl' || bp.device() === 'xxl') {
+    <app-menu-bar></app-menu-bar>
+    }
+    <app-why-me-section></app-why-me-section>
+    <app-skill-section></app-skill-section>
+    <app-my-projects></app-my-projects>
+    <app-feedback-section></app-feedback-section>
+    <app-contact-form></app-contact-form>
+</main>
+
 <app-footer></app-footer>

@@ -9,6 +9,9 @@ section {
     justify-content: space-around;
     padding: 24px;
     padding-inline: 8%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 
     >.logo {
         display: flex;
@@ -54,7 +57,7 @@ nav {
 @include respond(xl) {
     section {
         justify-content: space-between;
-        padding-inline: 24px;
+        padding-inline: 48px;
 
         nav {
             flex: 0.8;

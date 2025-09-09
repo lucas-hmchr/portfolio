@@ -12,6 +12,11 @@
     --clr-secondary-light-grey: #262E341F;
 }
 
+html {
+    scroll-behavior: smooth;
+
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -48,6 +53,10 @@ button {
 
 .no-scroll {
     overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
 }
 
 @include respond(xl) {}

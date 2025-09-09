@@ -13,10 +13,10 @@
 <div class="nav-popup-overlay" (click)="toggleNavMenu()">
     <div class="menu-container" (click)="$event.stopPropagation()">
         <nav>
-            <a href="">Why me</a>
-            <a href="">Skills</a>
-            <a href="">Projects</a>
-            <a href="">Contact</a>
+            <a href="#whyMeSection" (click)="toggleNavMenu()">Why me</a>
+            <a href="#skillsSection" (click)="toggleNavMenu()">Skills</a>
+            <a href="#projectsSection" (click)="toggleNavMenu()">Projects</a>
+            <a href="#contactSection" (click)="toggleNavMenu()">Contact</a>
             <div>
                 <button>DE</button>
                 <button>EN</button>
