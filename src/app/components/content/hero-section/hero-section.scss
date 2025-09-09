@@ -7,7 +7,7 @@ section {
     align-items: center;
     justify-content: space-between;
     padding: 128px 128px 0px 128px;
-    max-width: 2000px;
+    max-width: 2200px;
     overflow: hidden;
     margin-inline: auto;
 
@@ -261,6 +261,15 @@ section {
         >.content-wrapper {
 
             >.container {
+
+                >.subject {
+                    height: auto;
+
+                    & .portrait {
+                        width: auto;
+                        height: 100%;
+                    }
+                }
 
                 >.name-section {
 

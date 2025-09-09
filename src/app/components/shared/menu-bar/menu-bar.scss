@@ -8,6 +8,7 @@ section {
     align-items: center;
     justify-content: space-around;
     padding: 24px;
+    padding-inline: 8%;
 
     >.logo {
         display: flex;
@@ -31,6 +32,7 @@ nav {
     display: flex;
     justify-content: space-between;
     flex: 0.5;
+    max-width: 700px;
 
     >a {
         text-decoration: none;
@@ -52,6 +54,7 @@ nav {
 @include respond(xl) {
     section {
         justify-content: space-between;
+        padding-inline: 24px;
 
         nav {
             flex: 0.8;
