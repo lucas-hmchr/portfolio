@@ -13,7 +13,13 @@
             @if (bp.device() === 'sm' || bp.device() === 'xs' || bp.device() === 'xxs') {
             <div class="content-right-mobile">
                 <span>What I am currently learning</span>
-                <div>
+                <div [appScrollAnimate]="{
+        animateCss: 'fade-in-up',
+        hiddenClass: 'pre-hidden',
+        threshold: 0.25,
+        rootMargin: '0px 0px -10% 0px',
+        once: false
+      }" (visibleChange)="inView = $event">
                     <p>I am currently imporving my skills in Vue.js and Angular. My focus is on the framework specific
                         functionalities. I'm also expanding my skills with the matching design frameworks: Vuetify and
                         Material Design.

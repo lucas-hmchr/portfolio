@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { BreakpointService } from '../../../services/breakpoint';
+import { ScrollAnimateDirective } from './../../../directives/scroll-animate.directive';
 
 @Component({
   selector: 'app-skill-section',
-  imports: [],
+  standalone: true,
+  imports: [ScrollAnimateDirective],
   templateUrl: './skill-section.html',
-  styleUrl: './skill-section.scss'
+  styleUrl: './skill-section.scss',
 })
 export class SkillSection {
   icons: string[] = [
@@ -27,6 +29,8 @@ export class SkillSection {
     'Angular',
     'Vue',
   ]
+
+  inView = false;
 
   constructor(public bp: BreakpointService) {
 

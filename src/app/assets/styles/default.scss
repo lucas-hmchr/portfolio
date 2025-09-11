@@ -1,6 +1,8 @@
 @use './_breakpoints.scss' as *;
 @import url('./fonts.scss');
 @import url('./components.scss');
+@import './scroll-animations.scss';
+
 
 :root {
     // colors
