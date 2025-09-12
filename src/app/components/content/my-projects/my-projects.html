@@ -19,7 +19,7 @@
             }
         </div>
         <div class="project-body">
-            <div class="left-content">
+            <div class="left-content" [inViewport]="'slide-in-left'" [replayKey]="selectedProject.id">
                 @for (description of selectedProject.descriptions; track $index) {
                 <div class="project-description-container">
                     @if (bp.device() === 'xxl' || bp.device() === 'xl' || bp.device() === 'lg' || bp.device() === 'md')
@@ -45,7 +45,7 @@
                 </div>
                 }
             </div>
-            <div class="right-content">
+            <div class="right-content" [inViewport]="'slide-in-right'" [replayKey]="selectedProject.id">
                 @if (bp.device() === 'xxs' || bp.device() === 'xs' || bp.device() === 'sm') {
                 <h3 class="project-name">{{ selectedProject.name }}</h3>
                 }

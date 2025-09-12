@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { Project } from '../../../interfaces/project';
 import { Description } from '../../../interfaces/project';
 import { BreakpointService } from '../../../services/breakpoint';
+import { InViewportDirective } from '../../../directives/in-viewport.directive';
 
 @Component({
   selector: 'app-my-projects',
-  imports: [],
+  imports: [InViewportDirective],
   templateUrl: './my-projects.html',
   styleUrl: './my-projects.scss'
 })
