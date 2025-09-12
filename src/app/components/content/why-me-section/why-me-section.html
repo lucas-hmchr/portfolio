@@ -3,9 +3,9 @@
         <h1>Why me</h1>
         <div>
             <div class="content-left">
-                <img src="/images/why_me_section/location_icon.svg" alt="">
-                <span style="color: var(--clr-primary-blue);">I am </span>
-                <span class="animated-text">located in Hostel...</span>
+                <app-typing-rotator class="animated-text" [items]="whyMeItems" [typeSpeed]="100" [pauseAtEnd]="1100"
+                    [selectSpeed]="500">
+                </app-typing-rotator>
             </div>
             <div class="content-right">
                 <p>I am passionate about coding because it combines analytical thinking with creativity. I enjoy
