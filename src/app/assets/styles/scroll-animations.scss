@@ -1,49 +1,56 @@
-/* Startzustand vor Sichtbarkeit */
-.pre-hidden {
+/* basis: Startzustand */
+.reveal {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+/* Standard-"in-view" (sanft einblenden) */
+.in-view {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 600ms ease var(--delay, 0ms),
+    transform 600ms ease var(--delay, 0ms);
+}
+
+/* weitere Varianten – nutze als [inViewport] Input */
+.fade-up {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 700ms ease var(--delay, 0ms),
+    transform 700ms ease var(--delay, 0ms);
+}
+.fade-up.reveal { /* Startzustand, wenn .fade-up gewünscht */
   opacity: 0;
   transform: translateY(16px);
 }
 
-/* Effekt 1: fade-in-up */
-.fade-in-up {
-  animation: fade-in-up 500ms ease-out both;
+.slide-in {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 500ms ease var(--delay, 0ms),
+    transform 500ms ease var(--delay, 0ms);
 }
-@keyframes fade-in-up {
-  from { opacity: 0; transform: translateY(16px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-/* Effekt 2: fade-in */
-.fade-in {
-  animation: fade-in 400ms ease-out both;
-}
-@keyframes fade-in {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+.slide-in.reveal {
+  opacity: 0;
+  transform: translateX(-24px);
 }
 
-/* Effekt 3: fade-in-left */
-.fade-in-left {
-  animation: fade-in-left 500ms ease-out both;
-}
-@keyframes fade-in-left {
-  from { opacity: 0; transform: translateX(-24px); }
-  to   { opacity: 1; transform: translateX(0); }
-}
-
-/* Bewegunssensibel: kein Geflacker für Nutzer mit reduce motion */
-@media (prefers-reduced-motion: reduce) {
-  .pre-hidden,
-  .fade-in-up,
-  .fade-in,
-  .fade-in-left {
-    animation: none !important;
-    opacity: 1 !important;
-    transform: none !important;
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-24px);
+  }
+  60% {
+    transform: translateY(-12px);
   }
 }
-
-.will-change {
-  will-change: transform, opacity;
+.bounce {
+  opacity: 1;
+  animation: bounce 1s;
+  animation-delay: var(--delay, 0ms);
 }
-
