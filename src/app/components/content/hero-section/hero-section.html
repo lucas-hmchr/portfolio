@@ -21,7 +21,7 @@
                 <span class="fd-headline">FRONTEND DEVELOPER</span>
             </div>
 
-            <a href="#whyMeSection"><button class="scroll-button"><img src="/images/hero_section/arrow_down.svg"
+            <a href="#whyMeSection" [inViewport]="'bounce'" [delay]="500"><button class="scroll-button"><img src="/images/hero_section/arrow_down.svg"
                         alt=""></button></a>
         </div>
         } @else if(bp.device() === 'lg' || bp.device() === 'md' || bp.device() === 'sm' || bp.device() === 'xs' ||
@@ -56,8 +56,4 @@
         }
 
     </div>
-
-    <!-- @if(bp.device() === 'lg' || bp.device() === 'xl' || bp.device() === 'xxl') {
-    <app-menu-bar></app-menu-bar>
-    } -->
 </section>

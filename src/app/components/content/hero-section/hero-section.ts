@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { MenuBar } from "../../shared/menu-bar/menu-bar";
 import { BreakpointService } from '../../../services/breakpoint';
+import { InViewportDirective } from '../../../directives/in-viewport.directive';
+
 
 @Component({
   selector: 'app-hero-section',
-  imports: [MenuBar],
+  imports: [InViewportDirective],
   templateUrl: './hero-section.html',
   styleUrl: './hero-section.scss'
 })

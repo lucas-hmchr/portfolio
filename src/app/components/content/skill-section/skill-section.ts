@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { BreakpointService } from '../../../services/breakpoint';
-import { ScrollAnimateDirective } from './../../../directives/scroll-animate.directive';
+import { InViewportDirective } from '../../../directives/in-viewport.directive';
 
 @Component({
   selector: 'app-skill-section',
   standalone: true,
-  imports: [ScrollAnimateDirective],
+  imports: [InViewportDirective],
   templateUrl: './skill-section.html',
   styleUrl: './skill-section.scss',
 })
