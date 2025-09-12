@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { BreakpointService } from '../../../services/breakpoint';
 import { InViewportDirective } from '../../../directives/in-viewport.directive';
+import { TranslocoModule } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-skill-section',
   standalone: true,
-  imports: [InViewportDirective],
+  imports: [InViewportDirective, TranslocoModule],
   templateUrl: './skill-section.html',
   styleUrl: './skill-section.scss',
 })

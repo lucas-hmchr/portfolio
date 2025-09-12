@@ -12,12 +12,9 @@
             </div>
             @if (bp.device() === 'sm' || bp.device() === 'xs' || bp.device() === 'xxs') {
             <div class="content-right-mobile">
-                <span>What I am currently learning</span>
+                <span>{{ 'skillSection.improvingHeader' | transloco}}</span>
                 <div>
-                    <p>I am currently imporving my skills in Vue.js and Angular. My focus is on the framework specific
-                        functionalities. I'm also expanding my skills with the matching design frameworks: Vuetify and
-                        Material Design.
-                    </p>
+                    <p>{{ 'skillSection.improvingParagraph' | transloco }}</p>
                     <div>
                         @for (icon of learningStack; track $index) {
                         <div class="learning-skill">

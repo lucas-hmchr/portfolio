@@ -1,8 +1,7 @@
 <span class="tw">
     @if (current?.icon) {
     <img class="tw-icon" [src]="current!.icon" />
-    <!-- <img src="/images/why_me_section/location_icon.svg" alt=""> -->
-    <span style="color: var(--clr-primary-blue);" class="static-text">I am </span>
+    <span style="color: var(--clr-primary-blue);" class="static-text">{{'typingRotator.start' | transloco}} </span>
     }
     <span class="tw-text" [class.selecting]="selecting" [style.--sel]="sel" [style.--select-speed]="selectSpeed + 'ms'">
         {{ shown }}

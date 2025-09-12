@@ -1,0 +1,25 @@
+{
+    "nav": {
+        "firstSection": "Warum ich",
+        "secondSection": "Skills",
+        "thirdSection": "Projekte",
+        "fourthSection": "Kontakt"
+    },
+    "footer": {
+        "legal-notice": "Impressum"
+    },
+    "whyMeSection": {
+        "paragraph": "Ich bin begeistert vom Programmieren, weil es analytisches Denken mit Kreativität verbindet. Es macht mir Spaß, komplexe Probleme in klare Lösungen zu zerlegen und Ideen in echte, funktionierende Anwendungen umzusetzen. Das Programmieren fordert mich heraus, beharrlich zu bleiben, weiter zu lernen und mich ständig zu verbessern. Ich schätze auch die Zusammenarbeit – Wissen zu teilen, mit anderen zusammenzuarbeiten und gemeinsam etwas Größeres aufzubauen. Für mich geht es beim Programmieren nicht nur darum, Code zu schreiben, sondern Probleme zu lösen und sinnvolle Lösungen zu schaffen."
+    },
+    "typingRotator": {
+        "start": "Ich bin",
+        "located": "zuhause in Hostel, Deutschland.",
+        "remote": "offen für Remote-Arbeit.",
+        "relocate": "bereit für einen Umzug."
+    },
+    "skillSection": {
+        "improvingHeader": "Was ich aktuell lerne",
+        "improvingStart": "Aktuell baue ich meine Skills",
+        "improvingParagraph": "I am currently imporving my skills in Vue.js and Angular. My focus is on the framework specific functionalities. I'm also expanding my skills with the matching design frameworks: Vuetify and Material Design."
+    }
+}

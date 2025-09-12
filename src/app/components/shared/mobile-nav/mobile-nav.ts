@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-
+import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
 @Component({
   selector: 'app-mobile-nav',
-  imports: [],
+  imports: [TranslocoModule],
   templateUrl: './mobile-nav.html',
   styleUrl: './mobile-nav.scss'
 })

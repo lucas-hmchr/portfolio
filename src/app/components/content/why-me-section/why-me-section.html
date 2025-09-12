@@ -1,20 +1,14 @@
 <section id="whyMeSection">
     <div class="content-container">
-        <h1>Why me</h1>
+        <h1>{{ 'nav.firstSection' | transloco}}</h1>
         <div>
             <div class="content-left">
-                <app-typing-rotator class="animated-text" [items]="whyMeItems" [typeSpeed]="100" [pauseAtEnd]="1100"
+                <app-typing-rotator class="animated-text" [items]="whyMeItems()" [typeSpeed]="100" [pauseAtEnd]="1100"
                     [selectSpeed]="500">
                 </app-typing-rotator>
             </div>
             <div class="content-right">
-                <p>I am passionate about coding because it combines analytical thinking with creativity. I enjoy
-                    breaking down complex problems into clear solutions and turning ideas into real, working
-                    applications. Coding challenges me to stay persistent, to keep learning, and to continuously
-                    improve. I also value collaboration — sharing knowledge, working with others, and building something
-                    greater together. For me, coding is not just about writing code, but about solving problems and
-                    creating meaningful solutions.
-                </p>
+                <p>{{ 'whyMeSection.paragraph' | transloco}}</p>
                 <button class="contact-button">Let's talk</button>
             </div>
         </div>

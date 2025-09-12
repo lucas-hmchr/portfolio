@@ -1,0 +1,25 @@
+{
+    "nav": {
+        "firstSection": "Why me",
+        "secondSection": "Skills",
+        "thirdSection": "Projects",
+        "fourthSection": "Contact"
+    },
+    "footer": {
+        "legal-notice": "Legal Notice"
+    },
+    "whyMeSection": {
+        "paragraph": "I am passionate about coding because it combines analytical thinking with creativity. I enjoy breaking down complex problems into clear solutions and turning ideas into real, working applications. Coding challenges me to stay persistent, to keep learning, and to continuously improve. I also value collaboration — sharing knowledge, working with others, and building something greater together. For me, coding is not just about writing code, but about solving problems and creating meaningful solutions."
+    },
+    "typingRotator": {
+        "start": "I am",
+        "located": "located in Hostel, Germany.",
+        "remote": "open to work remote.",
+        "relocate": "ready to relocate."
+    },
+    "skillSection": {
+        "improvingHeader": "What I am currently learning",
+        "improvingStart": "I am currently improving my",
+        "improvingParagraph": "I am currently imporving my skills in Vue.js and Angular. My focus is on the framework specific functionalities. I'm also expanding my skills with the matching design frameworks: Vuetify and Material Design."
+    }
+}

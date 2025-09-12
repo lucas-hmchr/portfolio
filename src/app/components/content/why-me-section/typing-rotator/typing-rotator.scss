@@ -39,7 +39,6 @@
     }
 }
 
-/* "Markieren"-Look via Background, Breite mit --sel steuerbar */
 .tw-text.selecting {
     background-image: linear-gradient(var(--sel-color, rgba(0, 120, 255, .35)), var(--sel-color, rgba(0, 120, 255, .35)));
     background-repeat: no-repeat;
@@ -48,12 +47,10 @@
     transition: background-size var(--select-speed, 300ms) linear;
 }
 
-/* Caret ausblenden, während markiert wird */
 .tw-text.selecting::after {
     opacity: 0;
 }
 
-/* Bewegungsarme Systeme */
 @media (prefers-reduced-motion: reduce) {
     .tw-text::after {
         animation: none;

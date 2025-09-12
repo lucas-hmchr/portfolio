@@ -5,13 +5,12 @@
         <span>developer</span>
     </div>
     <nav>
-        <a href="#whyMeSection">Why me</a>
-        <a href="#skillsSection">Skills</a>
-        <a href="#projectsSection">Projects</a>
-        <a href="#contactSection">Contact</a>
+        <a href="#whyMeSection">{{ 'nav.firstSection' | transloco }}</a>
+        <a href="#skillsSection">{{ 'nav.secondSection' | transloco }}</a>
+        <a href="#projectsSection">{{ 'nav.thirdSection' | transloco }}</a>
+        <a href="#contactSection">{{ 'nav.fourthSection' | transloco }}</a>
     </nav>
     <div class="languages">
-        <button>DE</button>
-        <button>EN</button>
+        <app-language-switcher></app-language-switcher>
     </div>
 </section>
