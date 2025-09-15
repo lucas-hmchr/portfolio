@@ -1,6 +1,6 @@
 <section id="skillsSection">
     <div class="content-container">
-        <h1>My Skills</h1>
+        <h1>{{ "skillSection.title" | transloco }}</h1>
         <div>
             <div class="content-left">
                 @for (icon of icons; track $index) {
@@ -12,9 +12,9 @@
             </div>
             @if (bp.device() === 'sm' || bp.device() === 'xs' || bp.device() === 'xxs') {
             <div class="content-right-mobile">
-                <span>{{ 'skillSection.improvingHeader' | transloco}}</span>
+                <span>{{ 'skillSection.improvingHeaderMobile' | transloco}}</span>
                 <div>
-                    <p>{{ 'skillSection.improvingParagraph' | transloco }}</p>
+                    <p>{{ 'skillSection.improvingParagraphMobile' | transloco }}</p>
                     <div>
                         @for (icon of learningStack; track $index) {
                         <div class="learning-skill">
@@ -29,7 +29,7 @@
             }
             @else {
             <div class="content-right">
-                <span>I am currently improving my</span>
+                <span>{{ 'skillSection.improvingStart' | transloco}}</span>
                 <div>
                     @for (icon of learningStack; track $index) {
                     <div class="learning-skill">
@@ -38,10 +38,7 @@
                     </div>
                     }
                 </div>
-                <p>skills in Vue.js and Angular. My focus is on the framework specific
-                    functionalities. I'm also expanding my skills with the matching design frameworks: Vuetify and
-                    Material Design.
-                </p>
+                <p>{{ 'skillSection.improvingParagraph' | transloco }}</p>
             </div>
             }
             @if (bp.device() === 'lg' || bp.device() === 'md' || bp.device() === 'sm' || bp.device() === 'xs' ||

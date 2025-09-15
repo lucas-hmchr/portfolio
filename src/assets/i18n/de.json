@@ -9,7 +9,8 @@
         "legal-notice": "Impressum"
     },
     "whyMeSection": {
-        "paragraph": "Ich bin begeistert vom Programmieren, weil es analytisches Denken mit Kreativität verbindet. Es macht mir Spaß, komplexe Probleme in klare Lösungen zu zerlegen und Ideen in echte, funktionierende Anwendungen umzusetzen. Das Programmieren fordert mich heraus, beharrlich zu bleiben, weiter zu lernen und mich ständig zu verbessern. Ich schätze auch die Zusammenarbeit – Wissen zu teilen, mit anderen zusammenzuarbeiten und gemeinsam etwas Größeres aufzubauen. Für mich geht es beim Programmieren nicht nur darum, Code zu schreiben, sondern Probleme zu lösen und sinnvolle Lösungen zu schaffen."
+        "paragraph": "Ich bin begeistert vom Programmieren, weil es analytisches Denken mit Kreativität verbindet. Es macht mir Spaß, komplexe Probleme in klare Lösungen zu zerlegen und Ideen in echte, funktionierende Anwendungen umzusetzen. Das Programmieren fordert mich heraus, beharrlich zu bleiben, weiter zu lernen und mich ständig zu verbessern. Ich schätze auch die Zusammenarbeit – Wissen zu teilen, mit anderen zusammenzuarbeiten und gemeinsam etwas Größeres aufzubauen. Für mich geht es beim Programmieren nicht nur darum, Code zu schreiben, sondern Probleme zu lösen und sinnvolle Lösungen zu schaffen.",
+        "button": "Lass uns reden"
     },
     "typingRotator": {
         "start": "Ich bin",
@@ -18,8 +19,85 @@
         "relocate": "bereit für einen Umzug."
     },
     "skillSection": {
-        "improvingHeader": "Was ich aktuell lerne",
+        "title": "Meine Skills",
+        "improvingHeaderMobile": "Was ich aktuell lerne",
         "improvingStart": "Aktuell baue ich meine Skills",
-        "improvingParagraph": "I am currently imporving my skills in Vue.js and Angular. My focus is on the framework specific functionalities. I'm also expanding my skills with the matching design frameworks: Vuetify and Material Design."
+        "improvingParagraphMobile": "Ich verbessere derzeit meine Kenntnisse in Vue.js und Angular. Mein Schwerpunkt liegt auf den frameworkspezifischen Funktionen. Außerdem erweitere ich meine Kenntnisse mit den passenden Design-Frameworks: Vuetify und Material Design.",
+        "improvingParagraph": "in Vue.js und Angular aus. Mein Schwerpunkt liegt auf den frameworkspezifischen Funktionen. Außerdem erweitere ich meine Kenntnisse mit den passenden Design-Frameworks: Vuetify und Material Design."
+    },
+    "projectSection": {
+        "title": "Meine Projekte",
+        "join": {
+            "name": "Join",
+            "time": "3 Wochen",
+            "descriptions": [
+                {
+                    "title": "Über das Projekt",
+                    "text": "Dieser Aufgabenmanager ist vom Kanban-System inspiriert. Damit kannst du Aufgaben per Drag-and-Drop erstellen und organisieren sowie Benutzer und Kategorien zuweisen."
+                },
+                {
+                    "title": "Wie habe ich das Projekt organisiert",
+                    "text": "Das Projekt wurde in verschiedene Module aufgeteilt, die jeweils von einem anderen Teammitglied betreut wurden. Die Namen und die Zuordnung zu den Modulen wurden im Voraus abgestimmt. Ein klarer Scrum-Workflow stellte den Projekterfolg sicher."
+                },
+                {
+                    "title": "Meine Erfahrung mit dem Team",
+                    "text": "Die enge Zusammenarbeit mit meinem Team und regelmäßige Meetings haben für einen sauberen Projektablauf gesorgt. Unseren Code haben wir über ein Github Repository organisert und unsere Aufgaben über ein Trello Board."
+                }
+            ]
+        },
+        "el-pollo-loco": {
+            "name": "El Pollo Loco",
+            "time": "3 Wochen",
+            "descriptions": [
+                {
+                    "title": "Über das Projekt",
+                    "text": "In diesem 2D Jump and Run Spiel steuerst du den Charakter Pepe durch eine Steppe, um den Hühnerboss am Ende zu schlagen. Sammle Münzen und Tabascoflaschen, um das Level abzuschließen. Der Fokus des Projekts liegt auf der objektorientierten Programmierung"
+                },
+                {
+                    "title": "Wie habe ich das Projekt organisiert",
+                    "text": "Das Projekt ist nach wiederverwendbaren Komponenten strukturiert. Ich habe den Fokus auf cleanen Code und klare Strukturierung von Klassen gesetzt."
+                },
+                {
+                    "title": "Meine Erfahrung mit dem Team",
+                    "text": "Umgesetzt wurde das Projekt in Eigenleistung. Es hatte jedoch einen großen Vorteil sich mit anderen Entwicklern über Effekte und Animationen auszutauschen, um auch dort neue Erfahrungen zu sammeln."
+                }
+            ]
+        },
+        "hostel": {
+            "name": "Hostel",
+            "time": "4 Wochen und fortlaufend",
+            "descriptions": [
+                {
+                    "title": "Über das Projekt",
+                    "text": "Aus Liebe zu meiner Heimat habe ich ihr eine eigene Website gewidmet. Neben verschiedenen Unterseiten, welche das 200 Seelen Dorf präsentieren informiert ein Blog über aktuelle Geschehnisse."
+                },
+                {
+                    "title": "Wie habe ich das Projekt organisiert",
+                    "text": "Als WordPress Seite ist sie dazu gedacht, dass auch andere Freiwillige sich an der Contenterstellung beteiligen können. Voraussetzung für das Projekt sind also Content- und Userverwaltung weshalb WordPress gut geeignet ist. Mit verschiedenen Plugins wie Elementor habe ich das Design der Seite aufgebaut."
+                },
+                {
+                    "title": "Meine Erfahrung mit dem Team",
+                    "text": "Entwickelt habe ich das Projekt alleine. Das Konzept ist jedoch in Rücksprache mit anderen Engagierten entwickelt worden und wird laufend angepasst."
+                }
+            ]
+        },
+        "ongoing": {
+            "name": "Aktuell",
+            "time": "In Arbeit...",
+            "descriptions": [
+                {
+                    "title": "Über das Projekt",
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                },
+                {
+                    "title": "Wie habe ich das Projekt organisiert",
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                },
+                {
+                    "title": "Meine Erfahrung mit dem Team",
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                }
+            ]
+        }
     }
 }

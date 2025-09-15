@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
 import { Project } from '../../../interfaces/project';
 import { Description } from '../../../interfaces/project';
 import { BreakpointService } from '../../../services/breakpoint';
 import { InViewportDirective } from '../../../directives/in-viewport.directive';
+import { TranslocoService } from '@ngneat/transloco';
+import { toSignal } from '@angular/core/rxjs-interop';
 
 @Component({
   selector: 'app-my-projects',
@@ -11,8 +13,7 @@ import { InViewportDirective } from '../../../directives/in-viewport.directive';
   styleUrl: './my-projects.scss'
 })
 export class MyProjects {
-
-  projects: Project[] = [
+  readonly projects = computed((): Project[] => {return [
     {
       name: 'Join',
       time: '3 Wochen',
@@ -120,9 +121,8 @@ export class MyProjects {
       liveLink: 'https://github.com/lucas-hmchr',
       githubLink: 'https://github.com/lucas-hmchr',
       id: 4,
-    },
-
-  ]
+    }
+  ];})
 
   selectedProject: Project = this.projects[0];
 
@@ -130,7 +130,14 @@ export class MyProjects {
 
   }
 
+  private t = inject(TranslocoService);
+
   public selectProject(project: Project) {
     this.selectedProject = project;
   }
+
+  private tr = toSignal(
+    this.t.selectTranslateObject('typingRotator'),
+    { initialValue: { located: '', remote: '', relocate: '' } }
+  );
 }

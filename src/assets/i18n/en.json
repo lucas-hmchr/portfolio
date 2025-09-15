@@ -9,7 +9,8 @@
         "legal-notice": "Legal Notice"
     },
     "whyMeSection": {
-        "paragraph": "I am passionate about coding because it combines analytical thinking with creativity. I enjoy breaking down complex problems into clear solutions and turning ideas into real, working applications. Coding challenges me to stay persistent, to keep learning, and to continuously improve. I also value collaboration — sharing knowledge, working with others, and building something greater together. For me, coding is not just about writing code, but about solving problems and creating meaningful solutions."
+        "paragraph": "I am passionate about coding because it combines analytical thinking with creativity. I enjoy breaking down complex problems into clear solutions and turning ideas into real, working applications. Coding challenges me to stay persistent, to keep learning, and to continuously improve. I also value collaboration — sharing knowledge, working with others, and building something greater together. For me, coding is not just about writing code, but about solving problems and creating meaningful solutions.",
+        "button": "Let's talk"
     },
     "typingRotator": {
         "start": "I am",
@@ -18,8 +19,85 @@
         "relocate": "ready to relocate."
     },
     "skillSection": {
-        "improvingHeader": "What I am currently learning",
+        "title": "My Skills",
+        "improvingHeaderMobile": "What I am currently learning",
         "improvingStart": "I am currently improving my",
-        "improvingParagraph": "I am currently imporving my skills in Vue.js and Angular. My focus is on the framework specific functionalities. I'm also expanding my skills with the matching design frameworks: Vuetify and Material Design."
+        "improvingParagraphMobile": "I am currently imporving my skills in Vue.js and Angular. My focus is on the framework specific functionalities. I'm also expanding my skills with the matching design frameworks: Vuetify and Material Design.",
+        "improvingParagraph": " in Vue.js and Angular. My focus is on the framework specific functionalities. I'm also expanding my skills with the matching design frameworks: Vuetify and Material Design."
+    },
+    "projectSection": {
+        "title": "Meine Projekte",
+        "join": {
+            "name": "Join",
+            "time": "3 Weeks",
+            "descriptions": [
+                {
+                    "title": "About the project",
+                    "text": "This task manager is inspired by the Kanban system. It allows you to create and organise tasks using drag and drop, as well as assign users and categories."
+                },
+                {
+                    "title": "How the project was organized",
+                    "text": "The project was divided into different modules, each of which was supervised by a different team member. The names and assignment to the modules were agreed in advance. A clear Scrum workflow ensured the success of the project."
+                },
+                {
+                    "title": "My experience working with a team",
+                    "text": "Close collaboration with my team and regular meetings ensured that the project ran smoothly. We organised our code via a GitHub repository and our tasks via a Trello board."
+                }
+            ]
+        },
+        "el-pollo-loco": {
+            "name": "El Pollo Loco",
+            "time": "3 Weeks",
+            "descriptions": [
+                {
+                    "title": "About the project",
+                    "text": "In this 2D jump and run game, you control the character Pepe through a steppe to defeat the chicken boss at the end. Collect coins and Tabasco bottles to complete the level. The focus of the project is on object-oriented programming."
+                },
+                {
+                    "title": "How the project was organized",
+                    "text": "The project is structured around reusable components. I have focused on clean code and clear class structuring."
+                },
+                {
+                    "title": "My experience working with a team",
+                    "text": "The project was implemented in-house. However, it was a great advantage to be able to exchange ideas with other developers about effects and animations in order to gain new experience in this area as well."
+                }
+            ]
+        },
+        "hostel": {
+            "name": "Hostel",
+            "time": "4 Weeks and ongoing",
+            "descriptions": [
+                {
+                    "title": "About the project",
+                    "text": "Out of love for my homeland, I have dedicated a website to it. In addition to various subpages presenting the village of 200 souls, a blog provides information about current events."
+                },
+                {
+                    "title": "How the project was organized",
+                    "text": "As a WordPress site, it is designed so that other volunteers can also participate in content creation. Content and user management are therefore prerequisites for the project, which is why WordPress is well suited. I built the design of the site using various plugins such as Elementor."
+                },
+                {
+                    "title": "My experience working with a team",
+                    "text": "I developed the project on my own. However, the concept was developed in consultation with other committed individuals and is continuously being adapted."
+                }
+            ]
+        },
+        "ongoing": {
+            "name": "Ongoing",
+            "time": "In progress..",
+            "descriptions": [
+                {
+                    "title": "About the project",
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                },
+                {
+                    "title": "How the project was organized",
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                },
+                {
+                    "title": "MeMy experience working with a team",
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                }
+            ]
+        }
     }
 }
