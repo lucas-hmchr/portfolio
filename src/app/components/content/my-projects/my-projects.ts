@@ -1,10 +1,12 @@
-import { Component, computed, inject } from '@angular/core';
+import { Component, computed, effect, inject } from '@angular/core';
 import { Project } from '../../../interfaces/project';
 import { Description } from '../../../interfaces/project';
 import { BreakpointService } from '../../../services/breakpoint';
 import { InViewportDirective } from '../../../directives/in-viewport.directive';
 import { TranslocoService } from '@ngneat/transloco';
 import { toSignal } from '@angular/core/rxjs-interop';
+
+type ProjectI18nKey = 'join' | 'el-pollo-loco' | 'hostel' | 'ongoing';
 
 @Component({
   selector: 'app-my-projects',
@@ -13,7 +15,7 @@ import { toSignal } from '@angular/core/rxjs-interop';
   styleUrl: './my-projects.scss'
 })
 export class MyProjects {
-  readonly projects = computed((): Project[] => {return [
+  readonly staticProjects: Project[] = [
     {
       name: 'Join',
       time: '3 Wochen',
@@ -122,22 +124,56 @@ export class MyProjects {
       githubLink: 'https://github.com/lucas-hmchr',
       id: 4,
     }
-  ];})
+  ]
 
-  selectedProject: Project = this.projects[0];
+  selectedProject: Project = this.staticProjects[0];
 
   constructor(public bp: BreakpointService) {
 
   }
+  private readonly projectI18nKeyById: Record<number, ProjectI18nKey> = {
+    1: 'join',
+    2: 'el-pollo-loco',
+    3: 'hostel',
+    4: 'ongoing'
+  };
 
-  private t = inject(TranslocoService);
-
-  public selectProject(project: Project) {
-    this.selectedProject = project;
-  }
-
-  private tr = toSignal(
-    this.t.selectTranslateObject('typingRotator'),
-    { initialValue: { located: '', remote: '', relocate: '' } }
+  private readonly transloco = inject(TranslocoService);
+  private readonly projectSectionTranslations = toSignal(
+    this.transloco.selectTranslateObject('projectSection'),
+    { initialValue: {} as any }
   );
+
+  public projectsView: Project[] = structuredClone(this.staticProjects);
+
+  public activeProject: Project = this.projectsView[0];
+
+  private readonly mergeTranslationsEffect = effect(() => {
+    const tr = this.projectSectionTranslations();
+
+    this.projectsView = this.staticProjects.map((p) => {
+      const key = this.projectI18nKeyById[p.id];
+      const trProject = tr?.[key] ?? {};
+      const trDescriptions: Array<{ title?: string; text?: string }> =
+        trProject.descriptions ?? [];
+
+      const mergedDescriptions =
+        trDescriptions.length > 0
+          ? trDescriptions.map(d => ({ title: d.title ?? '', text: d.text ?? '' }))
+          : p.descriptions;
+
+      const name = trProject.name ?? p.name;
+      const time = trProject.time ?? p.time;
+      return { ...p, name, time, descriptions: mergedDescriptions };
+
+    });
+
+    const currentId = this.activeProject?.id ?? this.projectsView[0].id;
+    this.activeProject =
+      this.projectsView.find(x => x.id === currentId) ?? this.projectsView[0];
+  });
+
+  public setActiveProject(project: Project) {
+    this.activeProject = project;
+  }
 }
