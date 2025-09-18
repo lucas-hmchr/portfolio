@@ -9,6 +9,12 @@ import { TranslocoService } from '@ngneat/transloco';
   styleUrl: './language-switcher.scss'
 })
 export class LanguageSwitcher {
-  constructor(private t: TranslocoService) {}
-  set(lang: 'en'|'de') { this.t.setActiveLang(lang); }
+  constructor(private t: TranslocoService) { }
+  set(lang: 'en' | 'de') {
+    this.t.setActiveLang(lang);
+    try {
+      localStorage.setItem('lang', lang);
+    } catch { }
+    document.documentElement.lang = lang;
+  }
 }

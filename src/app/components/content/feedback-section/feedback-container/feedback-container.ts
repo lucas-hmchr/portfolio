@@ -10,4 +10,6 @@ import { Feedback } from '../../../../interfaces/feedback';
 export class FeedbackContainer {
 
   @Input() feedback: Feedback | null = null
+  @Input() projectLabel: string | null = null
+  @Input() profileLabel: string | null = null
 }

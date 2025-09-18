@@ -1,16 +1,15 @@
 import { Component, computed, effect, inject } from '@angular/core';
 import { Project } from '../../../interfaces/project';
-import { Description } from '../../../interfaces/project';
 import { BreakpointService } from '../../../services/breakpoint';
 import { InViewportDirective } from '../../../directives/in-viewport.directive';
-import { TranslocoService } from '@ngneat/transloco';
+import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
 import { toSignal } from '@angular/core/rxjs-interop';
 
 type ProjectI18nKey = 'join' | 'el-pollo-loco' | 'hostel' | 'ongoing';
 
 @Component({
   selector: 'app-my-projects',
-  imports: [InViewportDirective],
+  imports: [InViewportDirective, TranslocoModule],
   templateUrl: './my-projects.html',
   styleUrl: './my-projects.scss'
 })

@@ -1,6 +1,6 @@
 <section id="projectsSection">
   <div class="content-container">
-    <h1>My Projects</h1>
+    <h1>{{ 'projectSection.title' | transloco }}</h1>
 
     <div class="project-selection-header">
       @for (project of projectsView; track $index) {
@@ -61,7 +61,7 @@
             <img [src]="'/images/skill_icons/' + tech + '.svg'">
           }
         </div>
-        <span>Duration: {{ activeProject.time }}</span>
+        <span>{{'projectSection.timeTitle' | transloco}}: {{ activeProject.time }}</span>
         <img [src]="'/images/project_images/' + activeProject.img" alt="">
         @if (bp.device() === 'xxl' || bp.device() === 'xl' || bp.device() === 'lg' || bp.device() === 'md') {
           <div class="project-links">

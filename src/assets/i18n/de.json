@@ -27,6 +27,7 @@
     },
     "projectSection": {
         "title": "Meine Projekte",
+        "timeTitle": "Entwicklungszeit",
         "join": {
             "name": "Join",
             "time": "3 Wochen",
@@ -98,6 +99,21 @@
                     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
                 }
             ]
+        }
+    },
+    "feedbackSection": {
+        "title": "Sie suchen einen Teamplayer?",
+        "subtitle": "Hier ist was meine Kollegen über mich sagen.",
+        "profileLabel": "Profil",
+        "projectLabel": "Projekt",
+        "Daniel Tran": {
+            "description": "Großartige Teamarbeit beim Join-Projekt. Du hast eine solide Struktur aufgebaut und die Benutzeroberfläche übersichtlich und intuitiv gestaltet, was die Benutzerfreundlichkeit wirklich verbessert hat."
+        },
+        "Thomas Pötsch": {
+            "description": "Im Rahmen des Join-Projekts hast du mit intelligenten Lösungen beeindruckt. Deine Drag-and-Drop-Logik und dein zuverlässiges Statusmanagement haben uns dabei geholfen, den Termin einzuhalten."
+        },
+        "Jannis Müller": {
+            "description": "Das Konzept und das Design welches Lucas für die Website über Hostel aufgestellt ist gut durchdacht und sehr passend. Als freiwilliger Helfer könnte es mir nicht leichter fallen mich an der Pflege zu beteiligen. "
         }
     }
 }

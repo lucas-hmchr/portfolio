@@ -26,7 +26,8 @@
         "improvingParagraph": " in Vue.js and Angular. My focus is on the framework specific functionalities. I'm also expanding my skills with the matching design frameworks: Vuetify and Material Design."
     },
     "projectSection": {
-        "title": "Meine Projekte",
+        "title": "My Projects",
+        "timeTitle": "Duration",
         "join": {
             "name": "Join",
             "time": "3 Weeks",
@@ -94,10 +95,25 @@
                     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
                 },
                 {
-                    "title": "MeMy experience working with a team",
+                    "title": "My experience working with a team",
                     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
                 }
             ]
+        }
+    },
+    "feedbackSection": {
+        "title": "Need a teamplayer? Here is what my colleagues say about me.",
+        "subtitle": "Here is what my colleagues say about me.",
+        "profileLabel": "Profile",
+        "projectLabel": "Project",
+        "Daniel Tran": {
+            "description": "Great teamwork on the Join project. You set up a solid structure and made the UI clean and intuitive, which really improved the user experience."
+        },
+        "Thomas Pötsch": {
+            "description": "In the Join project you impressed with smart solutions. Your drag-and-drop logic and reliable state management helped us meet the deadline."
+        },
+        "Jannis Müller": {
+            "description": "The concept and design that Lucas has created for the hostel website is well thought out and very fitting. As a volunteer, it couldn't be easier for me to get involved in maintaining it."
         }
     }
 }

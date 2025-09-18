@@ -1,13 +1,14 @@
-<section>
+<section id="feedbackSection">
     @if (bp.device() === 'sm' || bp.device() === 'xs' || bp.device() === 'xxs') {
-    <h2>Need a teamplayer?</h2>
-    <span>Here is what my colleagues say about me</span>
+    <h2>{{ sectionTitle }}</h2>
+    <span>{{ subtitle }}</span>
     } @else {
-    <h2>Need a teamplayer? Here is what my colleagues say about me</h2>
+    <h2>{{ sectionTitle }} {{ subtitle }}</h2>
     }
+
     <div class="content-container">
-        @for (feedback of this.feedbacks; track $index) {
-        <app-feedback-container [feedback]="feedback"></app-feedback-container>
+        @for (fb of feedbacks; track fb.id) {
+        <app-feedback-container [feedback]="fb" [profileLabel]="profileLabel" [projectLabel]="projectLabel"></app-feedback-container>
         }
     </div>
 </section>
