@@ -17,10 +17,7 @@
             <a href="#skillsSection" (click)="toggleNavMenu()">{{ 'nav.secondSection' | transloco }}</a>
             <a href="#projectsSection" (click)="toggleNavMenu()">{{ 'nav.thirdSection' | transloco }}</a>
             <a href="#contactSection" (click)="toggleNavMenu()">{{ 'nav.fourthSection' | transloco }}</a>
-            <div>
-                <button>DE</button>
-                <button>EN</button>
-            </div>
+            <app-language-switcher></app-language-switcher>
         </nav>
     </div>
     <button class="close-button">

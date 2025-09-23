@@ -1,0 +1,20 @@
+.language-switch-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+
+    > button{
+        font-family: "Josefin Sans";
+        font-size: 1.0rem;
+        padding: 8px;
+    }
+}
+
+.language-switch-container button.active {
+  background-image: url('./../../../../../public/images/hero_section/shape3.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: white;
+}
