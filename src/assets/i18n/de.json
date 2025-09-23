@@ -115,5 +115,19 @@
         "Jannis Müller": {
             "description": "Das Konzept und das Design welches Lucas für die Website über Hostel aufgestellt ist gut durchdacht und sehr passend. Als freiwilliger Helfer könnte es mir nicht leichter fallen mich an der Pflege zu beteiligen. "
         }
+    },
+    "contactSection": {
+        "title": "Kontaktieren Sie mich",
+        "contactText": "Sie können sich gerne mit Stellenangeboten, Projektkooperationen oder beruflichen Empfehlungen an mich wenden – ich bin immer offen für Kontakte zu Gleichgesinnten.",
+        "nameField": "Ihr Name",
+        "mailField": "Ihre E-Mail",
+        "messageField": "Ihre Nachricht",
+        "ctaText": "Lass uns zusammenarbeiten!",
+        "privacyPolicyText": {
+            "start": "Ich habe die",
+            "link": "Datenschutzerklärung",
+            "end": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu."
+        },
+        "submitButton": "Senden"
     }
 }

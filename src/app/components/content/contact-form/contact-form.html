@@ -1,41 +1,39 @@
 <section id="contactSection">
-    <h1>Contact me</h1>
+    <h1>{{ "contactSection.title" | transloco }}</h1>
     <div class="content-container">
         <div class="information-container">
-            <p>Feel free to reach out with job opportunities, project collaborations, or professional recommendations —
-                I'm always open to connecting with like-minded people.</p>
+            <p>{{ "contactSection.contactText" | transloco }}</p>
             <div class="contact-information">
                 <a href="mailto:lucashamacher01@gmail.com"><img src="/images/contact_form/mail.svg" alt="">E-Mail: lucashamacher01@gmail.com</a>
                 <a href="tel:015732534531"><img src="/images/contact_form/telefone.svg" alt="">Tel: 01573 253 453 1</a>
             </div>
         </div>
         @if (bp.device() === 'sm' || bp.device() === 'xs' || bp.device() === 'xxs') {
-            <span style="color: var(--clr-primary-blue); margin-inline: auto; font-size: 20px;">Let us work together!</span>
+            <span style="color: var(--clr-primary-blue); margin-inline: auto; font-size: 20px;">{{ "contactSection.ctaText" | transloco }}</span>
         }
         <form action="">
             <div class="user-info-container">
                 <label for="">
                     <input type="text" placeholder=" ">
-                    <span>Your name</span>
+                    <span>{{ "contactSection.nameField" | transloco }}</span>
                 </label>
                 <label for="">
                     <input type="email" placeholder=" ">
-                    <span>Your e-mail</span>
+                    <span>{{ "contactSection.mailField" | transloco }}</span>
                 </label>
             </div>
             <label for="">
                 <textarea name="" id="" placeholder=" " class="message-input"></textarea>
-                <span>Your message</span>
+                <span>{{ "contactSection.messageField" | transloco }}</span>
             </label>
             <div class="privacy-policy-check">
                 <label class="checkbox-wrapper">
                     <input type="checkbox" />
                     <span class="custom-checkbox"></span>
                 </label>
-                <span>I've read the <a href="">privacy policy</a> and agree to the processing of my data as
-                    outlined.</span>
+                <span>{{ "contactSection.privacyPolicyText.start" | transloco }} <a href="">{{ "contactSection.privacyPolicyText.link" | transloco }} </a> {{ "contactSection.privacyPolicyText.end" | transloco }}</span>
             </div>
-            <button type="button">Send</button>
+            <button type="button">{{ "contactSection.submitButton" | transloco }}</button>
         </form>
     </div>
     <a href="#heroSection" class="scroll-button-absolute"><button class="scroll-button"><img src="/images/contact_form/arrow_up.svg" alt=""></button></a>

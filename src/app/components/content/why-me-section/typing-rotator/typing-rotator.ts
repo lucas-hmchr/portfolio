@@ -1,5 +1,6 @@
 import { Component, Input, OnDestroy } from '@angular/core';
 import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
+import { BreakpointService } from '../../../../services/breakpoint';
 type Item = { text: string; icon?: string };
 
 @Component({
@@ -23,7 +24,7 @@ export class TypingRotator implements OnDestroy {
 
   get current(): Item | undefined { return this.items?.[this.index % this.items.length]; }
 
-  constructor() { this.loop(); }
+  constructor(public bp: BreakpointService) { this.loop(); }
 
   ngOnDestroy() { clearTimeout(this.ti); }
 

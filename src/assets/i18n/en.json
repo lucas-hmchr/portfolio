@@ -115,5 +115,19 @@
         "Jannis Müller": {
             "description": "The concept and design that Lucas has created for the hostel website is well thought out and very fitting. As a volunteer, it couldn't be easier for me to get involved in maintaining it."
         }
+    },
+    "contactSection": {
+        "title": "Contact me",
+        "contactText": "Feel free to reach out with job opportunities, project collaborations, or professional recommendations — I'm always open to connecting with like-minded people.",
+        "nameField": "Your name",
+        "mailField": "Your e-mail",
+        "messageField": "Your message",
+        "ctaText": "Let us work together!",
+        "privacyPolicyText": {
+            "start": "I've read the",
+            "link": "privacy policy",
+            "end": "and agree to the processing of my data as outlined."
+        },
+        "submitButton": "Send"
     }
 }
