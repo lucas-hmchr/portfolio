@@ -13,7 +13,7 @@
         <span style="color: var(--clr-primary-blue); margin-inline: auto; font-size: 20px;">{{ "contactSection.ctaText"
             | transloco }}</span>
         }
-        <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+        <form novalidate #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
             <div class="user-info-container">
                 <div class="input-container">
                     <label for="">
@@ -49,14 +49,15 @@
             </div>
             <div class="privacy-policy-check">
                 <label class="checkbox-wrapper">
-                    <input type="checkbox" />
+                    <input #privacy="ngModel" type="checkbox" name="privacy" [(ngModel)]="contactData.privacy"
+                        required />
                     <span class="custom-checkbox"></span>
                 </label>
                 <span>{{ "contactSection.privacyPolicyText.start" | transloco }} <a href="">{{
                         "contactSection.privacyPolicyText.link" | transloco }} </a> {{
                     "contactSection.privacyPolicyText.end" | transloco }}</span>
             </div>
-            <button type="submit">{{ "contactSection.submitButton" | transloco }}</button>
+            <button type="submit" [disabled]="contactForm.invalid" >{{ "contactSection.submitButton" | transloco }}</button>
         </form>
     </div>
     <a href="#heroSection" class="scroll-button-absolute"><button class="scroll-button"><img

@@ -22,22 +22,27 @@ export class ContactForm {
     name: "",
     email: "",
     message: "",
+    privacy: false,
   }
 
   mailTest = true;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://potfolio.lucashamacher.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
         'Content-Type': 'text/plain',
-        responseType: 'text',
       },
+      responseType: 'text' as const,
     },
   };
 
   onSubmit(ngForm: NgForm) {
+    if (ngForm.invalid) {
+      ngForm.control.markAllAsTouched();
+      return;
+    }
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({

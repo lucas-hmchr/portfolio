@@ -304,3 +304,12 @@ button {
 .input-error{
     color: red;
 }
+
+button[disabled] {
+  opacity: .5;
+  cursor: not-allowed;
+
+  &:hover{
+    background-color: transparent;
+  }
+}
