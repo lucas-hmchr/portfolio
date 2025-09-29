@@ -128,6 +128,11 @@
             "link": "privacy policy",
             "end": "and agree to the processing of my data as outlined."
         },
-        "submitButton": "Send"
+        "submitButton": "Send",
+        "errorHints": {
+            "name": "Please enter your name.",
+            "mail": "Please enter a valid e-mail adress.",
+            "message": "Please enter a message with at least 4 letters."
+        }
     }
 }

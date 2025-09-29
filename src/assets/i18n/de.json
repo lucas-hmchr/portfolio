@@ -128,6 +128,11 @@
             "link": "Datenschutzerklärung",
             "end": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu."
         },
-        "submitButton": "Senden"
+        "submitButton": "Senden",
+        "errorHints": {
+            "name": "Bitte geben Sie ihren Namen an.",
+            "mail": "Bitte geben Sie eine gültige E-Mail Adresse an.",
+            "message": "Bitte geben Sie eine Nachricht mit min. 4 Buchstaben ein."
+        }
     }
 }

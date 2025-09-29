@@ -65,7 +65,7 @@ form {
     display: flex;
     gap: 32px;
 
-    >label {
+    >.input-container {
         flex: 0.5;
     }
 }
@@ -177,7 +177,6 @@ button {
 
     &:hover {
         background-color: var(--clr-primary-blue-transparent);
-
     }
 }
 
@@ -288,4 +287,20 @@ button {
             }
         }
     }
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 8px;
+
+    > label{
+        width: 100%;
+    }
+}
+
+.input-error{
+    color: red;
 }

@@ -15,30 +15,38 @@
         }
         <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
             <div class="user-info-container">
+                <div class="input-container">
+                    <label for="">
+                        <input #name="ngModel" type="text" placeholder=" " [(ngModel)]="contactData.name" name="name"
+                            required>
+                        <span>{{ "contactSection.nameField" | transloco }}</span>
+                    </label>
+                    @if (!name.valid && name.touched) {
+                    <span class="input-error">{{ "contactSection.errorHints.name" | transloco }}</span>
+                    }
+                </div>
+
+                <div class="input-container">
+                    <label for="">
+                        <input #email="ngModel" type="email" placeholder=" " [(ngModel)]="contactData.email"
+                            name="email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                        <span>{{ "contactSection.mailField" | transloco }}</span>
+                    </label>
+                    @if (!email.valid && email.touched) {
+                    <span class="input-error">{{ "contactSection.errorHints.mail" | transloco }}</span>
+                    }
+                </div>
+            </div>
+            <div class="input-container">
                 <label for="">
-                    <input #name="ngModel" type="text" placeholder=" " [(ngModel)]="contactData.name" name="name" required>
-                    <span>{{ "contactSection.nameField" | transloco }}</span>
+                    <textarea #message="ngModel" minlength="4" name="" id="" placeholder=" " class="message-input"
+                        [(ngModel)]="contactData.message" name="message" required></textarea>
+                    <span>{{ "contactSection.messageField" | transloco }}</span>
                 </label>
-                @if (!name.valid && name.touched) {
-                <span>Please enter a your Name!</span>
-                }
-                <label for="">
-                    <input #email="ngModel" type="email" placeholder=" " [(ngModel)]="contactData.email" name="email" required
-                        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
-                    <span>{{ "contactSection.mailField" | transloco }}</span>
-                </label>
-                @if (!email.valid && email.touched) {
-                <span>Please enter your email!</span>
+                @if (!message.valid && message.touched) {
+                <span class="input-error">{{ "contactSection.errorHints.message" | transloco }}</span>
                 }
             </div>
-            <label for="">
-                <textarea #message="ngModel" minlength="4" name="" id="" placeholder=" " class="message-input"
-                    [(ngModel)]="contactData.message" name="message" required></textarea>
-                <span>{{ "contactSection.messageField" | transloco }}</span>
-            </label>
-            @if (!message.valid && message.touched) {
-            <span>Please enter a message!</span>
-            }
             <div class="privacy-policy-check">
                 <label class="checkbox-wrapper">
                     <input type="checkbox" />
