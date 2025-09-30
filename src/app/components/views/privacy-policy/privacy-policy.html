@@ -1,1 +1,7 @@
-<p>privacy-policy works!</p>
+@if(bp.device() === 'md' || bp.device() === 'sm' || bp.device() === 'xs' || bp.device() === 'xxs') {
+<app-mobile-nav></app-mobile-nav>
+} @else {
+<app-menu-bar></app-menu-bar>
+}
+<app-privacy-policy-content></app-privacy-policy-content>
+<app-footer></app-footer>

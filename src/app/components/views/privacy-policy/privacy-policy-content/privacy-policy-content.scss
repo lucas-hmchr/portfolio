@@ -1,0 +1,42 @@
+@import './../../../../assets/styles/breakpoints';
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: flex-start;
+    padding: 80px;
+    width: 700px;
+    min-height: calc(100dvh - 304px);
+    gap: 32px;
+    min-width: 0;
+
+    .content-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 32px;
+        width: 100%;
+
+        >div {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            max-width: fit-content;
+        }
+    }
+}
+
+@include respond(md) {
+    section {
+        padding: 40px;
+        width: 100%;
+        min-height: calc(100dvh - 360px);
+    }
+}
+
+@include respond(xs) {
+    section {
+        padding: 20px;
+    }
+}
