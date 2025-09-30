@@ -134,5 +134,91 @@
             "mail": "Bitte geben Sie eine gültige E-Mail Adresse an.",
             "message": "Bitte geben Sie eine Nachricht mit min. 4 Buchstaben ein."
         }
+    },
+    "legalNotice": {
+        "title": "Impressum",
+        "imprint": {
+            "title": "Anschrift",
+            "country": "Deutschland"
+        },
+        "contact": {
+            "title": "Kontakt"
+        },
+        "disputeResolution": {
+            "title": "EU Streitschlichtung",
+            "text1": "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (ODR) bereit:",
+            "text2": "Unsere E-Mail-Adresse finden Sie oben im Impressum. Verbraucherstreitbeilegung / Allgemeine Schlichtungsstelle Ich bin nicht verpflichtet und nicht bereit, an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle gemäß § 36 VSBG teilzunehmen."
+        },
+        "termAcceptment": {
+            "title": "Akzeptanz der Bedingungen",
+            "text": "Durch den Zugriff auf und die Nutzung von Portfolio (Produkt) erkennen Sie die folgenden Geschäftsbedingungen und alle Richtlinien, Leitlinien oder Änderungen an, die Ihnen von Zeit zu Zeit vorgelegt werden können. Ich könnte die Bedingungen jederzeit ohne vorherige Ankündigung ändern."
+        },
+        "ownershipScope": {
+            "title": "Umfang und Eigentum des Produkts",
+            "text": "Portfolio wurde im Rahmen eines Studentenprojekts in einem Webentwicklungs-Bootcamp an der Developer Akademie GmbH entwickelt. Das Design von Portfolio gehört der Developer Akademie GmbH. Die unbefugte Nutzung, Vervielfältigung, Modifikation, Verbreitung oder Reproduktion des Designs ist strengstens untersagt."
+        },
+        "rights": {
+            "title": "Eigentumsrechte",
+            "text": "Abgesehen vom Design, das der Developer Akademie GmbH gehört, behalte Ich alle Eigentumsrechte an Portfolio, einschließlich aller damit verbundenen urheberrechtlich geschützten Materialien, Marken und anderen proprietären Informationen."
+        },
+        "productUse": {
+            "title": "Nutzung des Produkts",
+            "text": "Portfolio darf nur für rechtmäßige Zwecke genutzt werden, gemäß allen geltenden Gesetzen und Vorschriften. Jede Nutzung von Portfolio für illegale Aktivitäten oder um andere Personen zu belästigen, zu schädigen, zu bedrohen oder einzuschüchtern, ist strengstens untersagt. Sie sind allein verantwortlich für Ihre Interaktionen mit anderen Nutzern von Portfolio."
+        },
+        "warrantieDisclaimer": {
+            "title": "Haftungsausschluss und Haftungsbeschränkung",
+            "text": "Portfolio wird 'wie besehen' bereitgestellt, ohne jegliche ausdrückliche oder stillschweigende Garantie, einschließlich, aber nicht beschränkt auf die stillschweigenden Garantien der Marktgängigkeit, Eignung für einen bestimmten Zweck und Nichtverletzung. Weder Ich noch die Developer Akademie haften für direkte, indirekte, zufällige, spezielle, Folgeschäden oder beispielhafte Schäden, einschließlich, aber nicht beschränkt auf, Schäden durch entgangene Gewinne, Goodwill, Nutzung, Daten oder andere immaterielle Verluste, selbst wenn wir auf die Möglichkeit solcher Schäden hingewiesen wurden, die aus der Nutzung oder Leistung von Portfolio entstehen."
+        },
+        "indemnity": {
+            "title": "Entschädigung",
+            "text": "Sie erklären sich damit einverstanden, Mir, die Developer Akademie und unsere Partner, Mitarbeiter, Direktoren, Vertreter und Angestellten von allen Ansprüchen, Verlusten, Schäden, Kosten oder Haftungen (einschließlich angemessener Anwaltskosten) freizustellen, zu verteidigen und schadlos zu halten, die aus Ihrer Nutzung von Portfolio und/oder Ihrem Verstoß gegen dieses Impressum entstehen."
+        },
+        "date": {
+            "title": "Datum",
+            "text": "30.September 2025"
+        }
+    },
+    "privacyPolicy": {
+        "title": "Datenschutzerklärung",
+        "introduction": {
+            "title": "Einleitung",
+            "text": "Ich respektiere Ihre Privatsphäre und nehme den Schutz Ihrer persönlichen Daten sehr ernst. Diese Datenschutzerklärung erklärt, wie ich mit Informationen umgehe, wenn Sie Portfolio (meine persönliche Website) besuchen und nutzen."
+        },
+        "informationCollection": {
+            "title": "Welche Informationen ich sammle",
+            "text": "Ich erhebe, verarbeite oder speichere keine personenbezogenen Daten von Besuchern aktiv. Bestimmte technische Informationen (wie IP-Adresse, Browsertyp und allgemeine Nutzungsdaten) können jedoch automatisch von Ihrem Browser oder meinem Hosting-Anbieter erfasst werden, um die grundlegende Funktionalität und Sicherheit der Website zu gewährleisten."
+        },
+        "informationUse": {
+            "title": "Verwendung der Informationen",
+            "text": "Alle automatisch erfassten Informationen werden ausschließlich dazu verwendet, die Leistung, Funktionalität und Sicherheit von Portfolio aufrechtzuerhalten und zu verbessern. Ich verwende Ihre Daten nicht für Marketing-, Profiling- oder kommerzielle Zwecke."
+        },
+        "cookies": {
+            "title": "Cookies",
+            "text": "Portfolio selbst verwendet keine Cookies. Drittanbieter oder der Hosting-Anbieter können jedoch Cookies für den technischen Betrieb einsetzen. Sie können Cookies jederzeit über Ihre Browsereinstellungen verwalten oder blockieren."
+        },
+        "thirdParty": {
+            "title": "Drittanbieterdienste",
+            "text": "Diese Website kann Links zu externen Websites enthalten. Für die Datenschutzpraktiken oder Inhalte dieser externen Dienste bin ich nicht verantwortlich. Der Besuch solcher Seiten erfolgt auf eigenes Risiko."
+        },
+        "dataSecurity": {
+            "title": "Datensicherheit",
+            "text": "Ich treffe angemessene Maßnahmen, um Ihre Daten zu schützen. Wie bei jedem Online-Dienst kann jedoch kein vollständiger Schutz vor allen Risiken garantiert werden. Bitte nutzen Sie diese Website mit diesem Verständnis."
+        },
+        "rights": {
+            "title": "Ihre Rechte",
+            "text": "Als Besucher haben Sie das Recht, Auskunft über eventuell erhobene personenbezogene Daten zu verlangen sowie deren Berichtigung oder Löschung, soweit dies zutrifft. Da Portfolio keine personenbezogenen Daten absichtlich speichert, können solche Anfragen nur eingeschränkt beantwortet werden."
+        },
+        "changes": {
+            "title": "Änderungen dieser Datenschutzerklärung",
+            "text": "Ich kann diese Datenschutzerklärung von Zeit zu Zeit aktualisieren, um Änderungen gesetzlicher Anforderungen oder technischer Gegebenheiten zu berücksichtigen. Aktualisierungen werden auf dieser Seite veröffentlicht."
+        },
+        "contact": {
+            "title": "Kontakt",
+            "text": "Bei Fragen zu dieser Datenschutzerklärung kontaktieren Sie mich bitte unter lucashamacher01@gmail.com."
+        },
+        "date": {
+            "title": "Datum",
+            "text": "30.September 2025"
+        }
     }
 }

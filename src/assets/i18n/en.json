@@ -134,5 +134,91 @@
             "mail": "Please enter a valid e-mail adress.",
             "message": "Please enter a message with at least 4 letters."
         }
+    },
+    "legalNotice": {
+        "title": "Legal Notice",
+        "imprint": {
+            "title": "Imprint",
+            "country": "Germany"
+        },
+        "contact": {
+            "title": "Contact"
+        },
+        "disputeResolution": {
+            "title": "EU dispute resolution",
+            "text1": "The European Commission provides a platform for online dispute resolution (ODR):",
+            "text2": "You can find our email address at the top of the legal notice. Consumer dispute resolution / universal arbitration board I am not obliged and not willing to participate in dispute resolution proceedings before a consumer arbitration board (Section 36 VSBG)."
+        },
+        "termAcceptment": {
+            "title": "Acceptance of terms",
+            "text": "By accessing and using Portfolio (Product), you acknowledge and agree to the following terms and conditions, and any policies, guidelines, or amendments thereto that may be presented to you from time to time. I may update or change the terms and conditions from time to time without notice."
+        },
+        "ownershipScope": {
+            "title": "Scope and ownership of the product",
+            "text": "Portfolio has been developed as part of a student project in a web development bootcamp at the Developer Akademie GmbH. The design of Portfolio is owned by the Developer Akademie GmbH. Unauthorized use, reproduction, modification, distribution, or replication of the design is strictly prohibited."
+        },
+        "rights": {
+            "title": "Proprietary rights",
+            "text": "Aside from the design owned by Developer Akademie GmbH, I retain all proprietary rights in Portfolio, including any associated copyrighted material, trademarks, and other proprietary information."
+        },
+        "productUse": {
+            "title": "Use of the product",
+            "text": "Portfolio is intended to be used for lawful purposes only, in accordance with all applicable laws and regulations. Any use of Portfolio for illegal activities, or to harass, harm, threaten, or intimidate another person, is strictly prohibited. You are solely responsible for your interactions with other users of Portfolio."
+        },
+        "warrantieDisclaimer": {
+            "title": "Disclaimer of warranties and limitation of liability",
+            "text": "Portfolio is provided 'as is' without warranty of any kind, whether express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event will I or the Developer Akademie, be liable for any direct, indirect, incidental, special, consequential or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data, or other intangible losses, even if we have been advised of the possibility of such damages, arising out of or in connection with the use or performance of Portfolio."
+        },
+        "indemnity": {
+            "title": "Indemnity",
+            "text": "You agree to indemnify, defend and hold harmless us, Me and the Developer Akademie, and our affiliates, partners, officers, directors, agents, and employees, from and against any claim, demand, loss, damage, cost, or liability (including reasonable legal fees) arising out of or relating to your use of Portfolio and/or your breach of this Legal Notice."
+        },
+        "date": {
+            "title": "Datum",
+            "text": "30.September 2025"
+        }
+    },
+    "privacyPolicy": {
+        "title": "Privacy Policy",
+        "introduction": {
+            "title": "Introduction",
+            "text": "I respect your privacy and take the protection of your personal data very seriously. This privacy policy explains how I handle information when you visit and use Portfolio (my personal website)."
+        },
+        "informationCollection": {
+            "title": "What information I collect",
+            "text": "I do not actively collect, process or store any personal data from visitors. However, certain technical information (such as IP address, browser type and general usage data) may be automatically collected by your browser or my hosting provider to ensure the basic functionality and security of the website."
+        },
+        "informationUse": {
+            "title": "Use of information",
+            "text": "All automatically collected information is used solely to maintain and improve the performance, functionality and security of Portfolio. I do not use your data for marketing, profiling or commercial purposes."
+        },
+        "cookies": {
+            "title": "Cookies",
+            "text": "Portfolio itself does not use cookies. However, third-party providers or the hosting provider may use cookies for technical operations. You can manage or block cookies at any time via your browser settings."
+        },
+        "thirdParty": {
+            "title": "Third-Party-Services",
+            "text": "This website may contain links to external websites. I am not responsible for the privacy practices or content of these external services. Visiting such sites is at your own risk."
+        },
+        "dataSecurity": {
+            "title": "Data security",
+            "text": "I take appropriate measures to protect your data. However, as with any online service, complete protection against all risks cannot be guaranteed. Please use this website with this understanding."
+        },
+        "rights": {
+            "title": "Your rights",
+            "text": "As a visitor, you have the right to request information about any personal data that may have been collected, as well as to request its correction or deletion where applicable. Since Portfolio does not intentionally store personal data, such requests may be limited in scope."
+        },
+        "changes": {
+            "title": "Changes to this Privacy Policy",
+            "text": "I may update this Privacy Policy from time to time to reflect changes in legal requirements or technical setup. Updates will be published on this page."
+        },
+        "contact": {
+            "title": "Contact",
+            "text": "For any questions regarding this Privacy Policy, please contact me at lucashamacher01@gmail.com."
+        },
+        "date": {
+            "title": "Date",
+            "text": "September 30, 2025"
+        }
     }
 }
