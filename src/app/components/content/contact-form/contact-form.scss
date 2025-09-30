@@ -101,6 +101,35 @@ textarea {
     font-family: 'Josefin Sans';
     font-size: 20px;
     padding-inline: 24px;
+
+    &:-webkit-autofill{
+        background-color: transparent;
+         -webkit-box-shadow: 0 0 0 1000px var(--input-bg) inset !important;
+    }
+}
+
+/* Chrome/Edge/Safari */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-text-fill-color: white !important;
+  /* Autofill-Overlay mit eigener Farbe übermalen */
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+          box-shadow: 0 0 0 1000px transparent inset !important;
+  caret-color: white !important;
+  /* verhindert Autofill-Farbflash in Chrome */
+  transition: background-color 9999s ease-out 0s !important;
+}
+
+/* Firefox */
+input:-moz-autofill,
+textarea:-moz-autofill {
+  box-shadow: 0 0 0 1000px transparent inset !important;
+  color: white !important;
+  caret-color: white !important;
 }
 
 .message-input {

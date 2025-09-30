@@ -14,7 +14,7 @@
     },
     "typingRotator": {
         "start": "Ich bin",
-        "located": "zuhause in Hostel, Deutschland.",
+        "located": "zuhause in Hostel.",
         "remote": "offen für Remote-Arbeit.",
         "relocate": "bereit für einen Umzug."
     },
@@ -30,7 +30,7 @@
         "timeTitle": "Entwicklungszeit",
         "join": {
             "name": "Join",
-            "time": "3 Wochen",
+            "time": "4 Wochen",
             "descriptions": [
                 {
                     "title": "Über das Projekt",
