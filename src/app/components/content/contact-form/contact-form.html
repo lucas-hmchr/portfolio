@@ -57,7 +57,10 @@
                         "contactSection.privacyPolicyText.link" | transloco }} </a> {{
                     "contactSection.privacyPolicyText.end" | transloco }}</span>
             </div>
-            <button type="submit" [disabled]="contactForm.invalid" >{{ "contactSection.submitButton" | transloco }}</button>
+            <button type="submit" [disabled]="contactForm.invalid">
+                {{ "contactSection.submitButton" | transloco }}
+            </button>
+
         </form>
     </div>
     <a href="#heroSection" class="scroll-button-absolute"><button class="scroll-button"><img

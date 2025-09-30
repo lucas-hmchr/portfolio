@@ -45,8 +45,8 @@
 
         @if (bp.device() === 'xxs' || bp.device() === 'xs' || bp.device() === 'sm') {
           <div class="project-links">
-            <a [href]="activeProject.liveLink" class="live-test-button">Live Test</a>
-            <a [href]="activeProject.githubLink" class="github-button">GitHub</a>
+            <a [href]="activeProject.liveLink" class="live-test-button" target="_blank">Live Test</a>
+            <a [href]="activeProject.githubLink" class="github-button" target="_blank">GitHub</a>
           </div>
         }
       </div>
@@ -65,8 +65,8 @@
         <img [src]="'/images/project_images/' + activeProject.img" alt="">
         @if (bp.device() === 'xxl' || bp.device() === 'xl' || bp.device() === 'lg' || bp.device() === 'md') {
           <div class="project-links">
-            <a [href]="activeProject.liveLink" class="live-test-button">Live Test</a>
-            <a [href]="activeProject.githubLink" class="github-button">GitHub</a>
+            <a [href]="activeProject.liveLink" class="live-test-button" target="_blank">Live Test</a>
+            <a [href]="activeProject.githubLink" class="github-button" target="_blank">GitHub</a>
           </div>
         }
       </div>

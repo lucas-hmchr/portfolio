@@ -25,10 +25,10 @@ export class ContactForm {
     privacy: false,
   }
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
-    endPoint: 'https://potfolio.lucashamacher.de/sendMail.php',
+    endPoint: 'https://portfolio.lucashamacher.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
