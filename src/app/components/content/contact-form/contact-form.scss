@@ -102,9 +102,9 @@ textarea {
     font-size: 20px;
     padding-inline: 24px;
 
-    &:-webkit-autofill{
+    &:-webkit-autofill {
         background-color: transparent;
-         -webkit-box-shadow: 0 0 0 1000px var(--input-bg) inset !important;
+        -webkit-box-shadow: 0 0 0 1000px var(--input-bg) inset !important;
     }
 }
 
@@ -115,21 +115,21 @@ input:-webkit-autofill:focus,
 textarea:-webkit-autofill,
 textarea:-webkit-autofill:hover,
 textarea:-webkit-autofill:focus {
-  -webkit-text-fill-color: white !important;
-  /* Autofill-Overlay mit eigener Farbe übermalen */
-  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
-          box-shadow: 0 0 0 1000px transparent inset !important;
-  caret-color: white !important;
-  /* verhindert Autofill-Farbflash in Chrome */
-  transition: background-color 9999s ease-out 0s !important;
+    -webkit-text-fill-color: white !important;
+    /* Autofill-Overlay mit eigener Farbe übermalen */
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+    box-shadow: 0 0 0 1000px transparent inset !important;
+    caret-color: white !important;
+    /* verhindert Autofill-Farbflash in Chrome */
+    transition: background-color 9999s ease-out 0s !important;
 }
 
 /* Firefox */
 input:-moz-autofill,
 textarea:-moz-autofill {
-  box-shadow: 0 0 0 1000px transparent inset !important;
-  color: white !important;
-  caret-color: white !important;
+    box-shadow: 0 0 0 1000px transparent inset !important;
+    color: white !important;
+    caret-color: white !important;
 }
 
 .message-input {
@@ -193,7 +193,7 @@ textarea {
     background-image: url('./../../../../../public/images/contact_form/checkbox_checked.svg');
 }
 
-button {
+.btn-submit {
     padding: 16px;
     padding-inline: 28px;
     border: 1px solid var(--clr-primary-blue);
@@ -203,10 +203,45 @@ button {
     font-family: 'Josefin Sans';
     font-size: 18px;
     margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    line-height: 1;
 
     &:hover {
         background-color: var(--clr-primary-blue-transparent);
     }
+}
+
+.btn-submit .spinner {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid currentColor;
+    border-right-color: transparent;
+    animation: spin .7s linear infinite;
+    flex: 0 0 auto;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.btn-submit[disabled] {
+    opacity: .5;
+    cursor: not-allowed;
+
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+.btn-submit:disabled {
+    cursor: not-allowed;
+    opacity: .5;
 }
 
 .scroll-button-absolute {
@@ -318,27 +353,49 @@ button {
     }
 }
 
-.input-container{
+.input-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
     gap: 8px;
 
-    > label{
+    >label {
         width: 100%;
     }
 }
 
-.input-error{
+.input-error {
     color: red;
 }
 
-button[disabled] {
-  opacity: .5;
-  cursor: not-allowed;
+.alert {
+    margin-top: 1rem;
+    padding: .875rem 1rem;
+    border-radius: .75rem;
+    font-weight: 500;
+    line-height: 1.4;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .06);
+    animation: fade-in .18s ease-out;
+    width: 100%;
 
-  &:hover{
-    background-color: transparent;
-  }
+    &.success {
+        border: 1px solid #b9e6c9;
+    }
+
+    &.error {
+        border: 1px solid #ffb3b3;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-4px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

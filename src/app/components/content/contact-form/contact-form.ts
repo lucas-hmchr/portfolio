@@ -27,6 +27,10 @@ export class ContactForm {
 
   mailTest = false;
 
+  // UI-Status
+  isSubmitting = false;
+  status: 'idle' | 'success' | 'error' = 'idle';
+
   post = {
     endPoint: 'https://portfolio.lucashamacher.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
@@ -44,16 +48,20 @@ export class ContactForm {
       return;
     }
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
-      this.http.post(this.post.endPoint, this.post.body(this.contactData))
-        .subscribe({
-          next: (response) => {
+      this.isSubmitting = true;
+      this.status = 'idle';
 
+      this.http.post(this.post.endPoint, this.post.body(this.contactData), this.post.options)
+        .subscribe({
+          next: (textResponse: any) => {
+            this.status = 'success';
             ngForm.resetForm();
+            this.isSubmitting = false;
           },
-          error: (error) => {
-            console.error(error);
-          },
-          complete: () => console.info('send post complete'),
+          error: (err) => {
+            this.status = 'error';
+            this.isSubmitting = false;
+          }
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
 

@@ -57,6 +57,10 @@ button {
     overflow: hidden;
 }
 
+.d-none{
+    display: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }

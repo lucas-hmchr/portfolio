@@ -57,10 +57,19 @@
                         "contactSection.privacyPolicyText.link" | transloco }} </a> {{
                     "contactSection.privacyPolicyText.end" | transloco }}</span>
             </div>
-            <button type="submit" [disabled]="contactForm.invalid">
-                {{ "contactSection.submitButton" | transloco }}
+            <button type="submit" [disabled]="contactForm.invalid || isSubmitting" class="btn-submit">
+                @if (!isSubmitting) {
+                <span class="btn-label">{{ "contactSection.submitButton" | transloco }}</span>
+                }
+                <!-- @if (isSubmitting) {
+                <span class="btn-label">{{ "contactSection.sending" | transloco }}</span>
+                } -->
+                @if (isSubmitting) {
+                <span class="spinner" aria-hidden="true"></span>
+                }
             </button>
-
+            <div class="alert success" [class.d-none]="status !== 'success'">{{ "contactSection.submitStatus.success" | transloco: undefined :'de' }}</div>
+            <div class="alert error" [class.d-none]="status !== 'error'">{{ "contactSection.submitStatus.error" | transloco }}</div>
         </form>
     </div>
     <a href="#heroSection" class="scroll-button-absolute"><button class="scroll-button"><img
