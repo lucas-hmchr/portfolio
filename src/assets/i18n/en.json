@@ -133,6 +133,10 @@
             "name": "Please enter your name.",
             "mail": "Please enter a valid e-mail adress.",
             "message": "Please enter a message with at least 4 letters."
+        },
+        "submitStatus": {
+            "success": "Your message has been sent successfully.",
+            "error": "Error sending message. Please try again later or contact me directly via my email address or telephone number."
         }
     },
     "legalNotice": {

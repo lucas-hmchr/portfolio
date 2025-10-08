@@ -133,6 +133,10 @@
             "name": "Bitte geben Sie ihren Namen an.",
             "mail": "Bitte geben Sie eine gültige E-Mail Adresse an.",
             "message": "Bitte geben Sie eine Nachricht mit min. 4 Buchstaben ein."
+        },
+        "submitStatus": {
+            "success": "Ihre Nachricht wurde erfolgreich versendet.",
+            "error": "Fehler beim Senden der Nachricht. Bitte versuchen Sie es später erneut oder melden sich direkt über meine E-Mail Adresse oder Telefonnummer."
         }
     },
     "legalNotice": {
