@@ -10,6 +10,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
 
     case "POST":
         header("Access-Control-Allow-Origin: $allowed_origin");
+        header("Content-Type: text/plain; charset=utf-8");
 
         $json = file_get_contents('php://input');
         $params = json_decode($json);
@@ -27,8 +28,15 @@ switch ($_SERVER['REQUEST_METHOD']) {
         $headers[] = 'Content-type: text/html; charset=utf-8';
         $headers[] = "From: noreply@lucashamacher.de";
 
-        mail($recipient, $subject, $message, implode("\r\n", $headers));
-        echo json_encode(["status" => "success"]);
+        $ok = @mail($recipient, $subject, $message, implode("\r\n", $headers));
+
+        if ($ok) {
+            http_response_code(200);
+            echo "OK";
+        } else {
+            http_response_code(500);
+            echo "ERROR";
+        }
         break;
 
     default:
