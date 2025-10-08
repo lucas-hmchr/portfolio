@@ -79,16 +79,16 @@ section {
         }
     }
 
-    .content-container {
-        -ms-overflow-style: none;
-        /* IE and Edge */
-        scrollbar-width: none;
-        /* Firefox */
+    // .content-container {
+    //     // -ms-overflow-style: none;
+    //     // /* IE and Edge */
+    //     // scrollbar-width: none;
+    //     // /* Firefox */
 
-        &::-webkit-scrollbar {
-            display: none;
-        }
-    }
+    //     // &::-webkit-scrollbar {
+    //     //     display: none;
+    //     // }
+    // }
 }
 
 @include respond(xs) {
