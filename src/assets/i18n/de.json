@@ -28,6 +28,7 @@
     "projectSection": {
         "title": "Meine Projekte",
         "timeTitle": "Entwicklungszeit",
+        "technologies": "Technologien",
         "join": {
             "name": "Join",
             "time": "4 Wochen",

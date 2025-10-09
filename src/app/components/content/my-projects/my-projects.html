@@ -50,13 +50,25 @@
       <div class="right-content" [inViewport]="'slide-in-right'" [replayKey]="activeProject.id">
         @if (bp.device() === 'xxs' || bp.device() === 'xs' || bp.device() === 'sm') {
         <h3 class="project-name">{{ activeProject.name }}</h3>
-        }
-        <span class="">Technologies</span>
+
+        <span style="line-height: 120%;">{{ "projectSection.technologies" | transloco}}:
+          @for (tech of activeProject.technologies; track $index) {
+          @if($index + 1 !== activeProject.technologies.length){
+          {{ tech }},
+          } @else {
+            {{ tech }}
+          }
+          }
+        </span>
+        } @else {
+        <span>{{ "projectSection.technologies" | transloco}}</span>
         <div class="tech-icons">
           @for (tech of activeProject.technologies; track $index) {
           <img [src]="'/images/skill_icons/' + tech + '.svg'">
           }
         </div>
+        }
+
         <span>{{'projectSection.timeTitle' | transloco}}: {{ activeProject.time }}</span>
         <img [src]="'/images/project_images/' + activeProject.img" alt="">
         @if (bp.device() === 'xxl' || bp.device() === 'xl' || bp.device() === 'lg' || bp.device() === 'md') {

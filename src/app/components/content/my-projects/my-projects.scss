@@ -40,6 +40,7 @@ section {
         >h3 {
             font-size: 30px;
             font-weight: 500;
+
         }
     }
 
@@ -176,6 +177,7 @@ section {
         >.right-content {
             flex: 0.5;
             justify-content: center;
+            margin-inline: auto;
         }
     }
 }
@@ -242,8 +244,10 @@ section {
         }
     }
 
-    .project-name{
-        font-size: 18px;
+    .project-name {
+        font-size: 24px;
+        color: var(--clr-primary-blue);
+        font-weight: 400;
     }
 
     .project-description-container {

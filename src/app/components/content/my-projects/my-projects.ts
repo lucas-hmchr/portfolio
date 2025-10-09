@@ -22,6 +22,7 @@ export class MyProjects {
         'JavaScript',
         'HTML',
         'CSS',
+        'Firebase'
       ],
       descriptions: [ ],
       img: 'join.png',
