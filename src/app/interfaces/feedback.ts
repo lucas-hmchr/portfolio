@@ -2,6 +2,6 @@ export interface Feedback {
     name: string,
     id: number,
     description: string,
-    linkedin: string,
+    linkedin: string | null,
     project: string,
 }

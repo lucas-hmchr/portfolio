@@ -28,14 +28,14 @@ export class FeedbackSection {
       description:
         'Great teamwork on the Join project. You set up a solid structure and made the UI clean and intuitive, which really improved the user experience.',
       project: 'Join',
-      linkedin: 'https://www.linkedin.com/',
+      linkedin: 'https://www.linkedin.com/in/daniel-tran-72285930b',
     },
     {
       id: 2,
       name: 'Thomas Pötsch',
       description:
         'In the Join project you impressed with smart solutions. Your drag-and-drop logic and reliable state management helped us meet the deadline.',
-      linkedin: 'https://www.linkedin.com/',
+      linkedin: null,
       project: 'Join'
     },
     {
@@ -43,7 +43,7 @@ export class FeedbackSection {
       name: 'Jannis Müller',
       description:
         "The concept and design that Lucas has created for the hostel website is well thought out and very fitting. As a volunteer, it couldn't be easier for me to get involved in maintaining it.",
-      linkedin: 'https://www.linkedin.com/',
+      linkedin: null,
       project: 'Hostel'
     }
   ];

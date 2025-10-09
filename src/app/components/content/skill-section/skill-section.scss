@@ -52,7 +52,6 @@ section {
     >span {
         font-size: 18px;
         color: var(--clr-primary-blue);
-        max-width: 80px;
         text-align: center;
     }
 }
@@ -67,6 +66,8 @@ section {
     background-repeat: no-repeat;
     background-size: contain;
     aspect-ratio: 1/1;
+    max-width: 500px;
+    background-position: center;
 
     >div {
         display: flex;
@@ -99,8 +100,7 @@ section {
     }
 
     >span {
-        font-size: 14px;
-        max-width: 80px;
+        font-size: 16px;
         text-align: center;
     }
 }

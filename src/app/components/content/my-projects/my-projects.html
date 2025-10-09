@@ -4,70 +4,68 @@
 
     <div class="project-selection-header">
       @for (project of projectsView; track $index) {
-        @if (bp.device() === 'sm' || bp.device() === 'xs' || bp.device() === 'xxs') {
-          <div
-            [class.project-selected]="activeProject.id === project.id"
-            (click)="setActiveProject(project)"
-          >
-            <h3>{{ $index + 1 }}. Project</h3>
-          </div>
-        } @else {
-          <div
-            [class.project-selected]="activeProject.id === project.id"
-            (click)="setActiveProject(project)"
-          >
-            <h3>{{ $index + 1 }}. {{ project.name }}</h3>
-          </div>
-        }
+      @if (bp.device() === 'sm' || bp.device() === 'xs' || bp.device() === 'xxs') {
+      <div [class.project-selected]="activeProject.id === project.id" (click)="setActiveProject(project)">
+        <h3>{{ $index + 1 }}. Project</h3>
+      </div>
+      } @else {
+      <div [class.project-selected]="activeProject.id === project.id" (click)="setActiveProject(project)">
+        <h3>{{ $index + 1 }}. {{ project.name }}</h3>
+      </div>
+      }
       }
     </div>
 
     <div class="project-body">
       <div class="left-content" [inViewport]="'slide-in-left'" [replayKey]="activeProject.id">
         @for (description of activeProject.descriptions; track $index) {
-          <div class="project-description-container">
-            @if (bp.device() === 'xxl' || bp.device() === 'xl' || bp.device() === 'lg' || bp.device() === 'md') {
+        <div class="project-description-container">
+          @if (bp.device() === 'xxl' || bp.device() === 'xl' || bp.device() === 'lg' || bp.device() === 'md') {
+          <img src="/images/skill_section/project_point_ellipse.svg" alt="">
+          }
+          <div>
+            @if (bp.device() === 'xxs' || bp.device() === 'xs' || bp.device() === 'sm') {
+            <h4>
               <img src="/images/skill_section/project_point_ellipse.svg" alt="">
+              {{ description.title }}
+            </h4>
+            } @else {
+            <h4>{{ description.title }}</h4>
             }
-            <div>
-              @if (bp.device() === 'xxs' || bp.device() === 'xs' || bp.device() === 'sm') {
-                <h4>
-                  <img src="/images/skill_section/project_point_ellipse.svg" alt="">
-                  {{ description.title }}
-                </h4>
-              } @else {
-                <h4>{{ description.title }}</h4>
-              }
-              <p>{{ description.text }}</p>
-            </div>
+            <p>{{ description.text }}</p>
           </div>
+        </div>
         }
 
         @if (bp.device() === 'xxs' || bp.device() === 'xs' || bp.device() === 'sm') {
-          <div class="project-links">
-            <a [href]="activeProject.liveLink" class="live-test-button" target="_blank">Live Test</a>
-            <a [href]="activeProject.githubLink" class="github-button" target="_blank">GitHub</a>
-          </div>
+        <div class="project-links">
+          <a [href]="activeProject.liveLink" class="live-test-button" target="_blank">Live Test</a>
+          @if (activeProject.githubLink){
+          <a [href]="activeProject.githubLink" class="github-button" target="_blank">GitHub</a>
+          }
+        </div>
         }
       </div>
 
       <div class="right-content" [inViewport]="'slide-in-right'" [replayKey]="activeProject.id">
         @if (bp.device() === 'xxs' || bp.device() === 'xs' || bp.device() === 'sm') {
-          <h3 class="project-name">{{ activeProject.name }}</h3>
+        <h3 class="project-name">{{ activeProject.name }}</h3>
         }
         <span class="">Technologies</span>
         <div class="tech-icons">
           @for (tech of activeProject.technologies; track $index) {
-            <img [src]="'/images/skill_icons/' + tech + '.svg'">
+          <img [src]="'/images/skill_icons/' + tech + '.svg'">
           }
         </div>
         <span>{{'projectSection.timeTitle' | transloco}}: {{ activeProject.time }}</span>
         <img [src]="'/images/project_images/' + activeProject.img" alt="">
         @if (bp.device() === 'xxl' || bp.device() === 'xl' || bp.device() === 'lg' || bp.device() === 'md') {
-          <div class="project-links">
-            <a [href]="activeProject.liveLink" class="live-test-button" target="_blank">Live Test</a>
-            <a [href]="activeProject.githubLink" class="github-button" target="_blank">GitHub</a>
-          </div>
+        <div class="project-links">
+          <a [href]="activeProject.liveLink" class="live-test-button" target="_blank">Live Test</a>
+          @if (activeProject.githubLink){
+          <a [href]="activeProject.githubLink" class="github-button" target="_blank">GitHub</a>
+          }
+        </div>
         }
       </div>
     </div>

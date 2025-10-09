@@ -26,7 +26,7 @@ export class MyProjects {
       descriptions: [ ],
       img: 'join.png',
       liveLink: 'https://join.lucashamacher.de',
-      githubLink: 'https://github.com/lucas-hmchr',
+      githubLink: 'https://github.com/lucas-hmchr/Join',
       id: 1,
     },
     {
@@ -40,7 +40,7 @@ export class MyProjects {
       descriptions: [ ],
       img: 'el_pollo_loco.png',
       liveLink: 'https://el-pollo-loco.lucashamacher.de',
-      githubLink: 'https://github.com/lucas-hmchr',
+      githubLink: 'https://github.com/lucas-hmchr/El-Pollo-Loco',
       id: 2,
     },
     {
@@ -54,23 +54,9 @@ export class MyProjects {
       descriptions: [ ],
       img: 'hostel.jpg',
       liveLink: 'https://hostel-eifel.com/',
-      githubLink: 'https://github.com/lucas-hmchr',
+      githubLink: null,
       id: 3,
     },
-    {
-      name: 'Ongoing',
-      time: '3 Wochen',
-      technologies: [
-        'JavaScript',
-        'HTML',
-        'CSS',
-      ],
-      descriptions: [ ],
-      img: 'el_pollo_loco.png',
-      liveLink: 'https://el-pollo-loco.lucashamacher.de',
-      githubLink: 'https://github.com/lucas-hmchr',
-      id: 4,
-    }
   ]
 
   selectedProject: Project = this.staticProjects[0];

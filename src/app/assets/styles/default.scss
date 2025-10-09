@@ -16,7 +16,8 @@
 
 html {
     scroll-behavior: smooth;
-
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 * {
@@ -40,6 +41,15 @@ h1 {
     font-weight: 400;
 }
 
+section{
+    max-width: 2000px;
+    margin-inline: auto;
+}
+
+.content-container{
+    max-width: 1400px!important;
+}
+
 .f-anta {
     font-family: 'Anta';
 }
@@ -59,6 +69,11 @@ button {
 
 .d-none{
     display: none;
+}
+
+.logo{
+    text-decoration: none;
+    color: white;
 }
 
 @media (prefers-reduced-motion: reduce) {

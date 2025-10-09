@@ -4,7 +4,7 @@ export interface Project {
     technologies: string[],
     img: string,
     liveLink: string,
-    githubLink: string,
+    githubLink: string | null,
     id: number,
     descriptions: Description[],
 }

@@ -30,6 +30,7 @@ export class ContactForm {
   // UI-Status
   isSubmitting = false;
   status: 'idle' | 'success' | 'error' = 'idle';
+  private hideStatusTimeout?: ReturnType<typeof setTimeout>;
 
   post = {
     endPoint: 'https://portfolio.lucashamacher.de/sendMail.php',
@@ -57,10 +58,12 @@ export class ContactForm {
             this.status = 'success';
             ngForm.resetForm();
             this.isSubmitting = false;
+            this.startAutoHide();
           },
           error: (err) => {
             this.status = 'error';
             this.isSubmitting = false;
+            this.startAutoHide();
           }
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
@@ -68,4 +71,19 @@ export class ContactForm {
       ngForm.resetForm();
     }
   }
+
+  private startAutoHide() {
+    if (this.hideStatusTimeout) clearTimeout(this.hideStatusTimeout);
+
+    const delay = this.status === 'success' ? 3000 : 6000;
+    this.hideStatusTimeout = setTimeout(() => {
+      this.status = 'idle';
+    }, delay);
+  }
+
+  ngOnDestroy() {
+    if (this.hideStatusTimeout) clearTimeout(this.hideStatusTimeout);
+  }
 }
+
+
