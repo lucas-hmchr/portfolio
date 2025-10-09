@@ -399,3 +399,9 @@ textarea {
         transform: translateY(0);
     }
 }
+
+@media (max-height: 690px) {
+    section{
+        scroll-margin-top: 80px;
+    }
+}

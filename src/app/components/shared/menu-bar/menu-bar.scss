@@ -70,6 +70,7 @@ nav {
 
 @include respond(xl) {
     section {
+        padding-inline: 0px;
 
         >.menu-content {
             justify-content: space-between;

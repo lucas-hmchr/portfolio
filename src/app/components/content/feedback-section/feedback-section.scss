@@ -42,14 +42,17 @@ section {
         flex-wrap: nowrap;
         width: min-content;
         overflow-x: auto;
-        width: inherit;
-        max-width: 100vw;
         justify-content: flex-start;
         scrollbar-color: var(--clr-primary-blue) transparent;
         scrollbar-width: thin;
         padding-bottom: 32px;
         scroll-snap-type: x mandatory;
+        width: 100%;
+        max-width: 100%;
+        /* Horizontal scrollen erlaubt: */
         overflow-x: auto;
+        /* Scroll Komfort statt Padding: */
+        scrollbar-color: var(--clr-primary-blue) transparent;
     }
 }
 
@@ -65,17 +68,6 @@ section {
             text-align: left;
         }
     }
-
-    // .content-container {
-    //     // -ms-overflow-style: none;
-    //     // /* IE and Edge */
-    //     // scrollbar-width: none;
-    //     // /* Firefox */
-
-    //     // &::-webkit-scrollbar {
-    //     //     display: none;
-    //     // }
-    // }
 }
 
 @include respond(xs) {
@@ -86,7 +78,6 @@ section {
     }
 
     .content-container {
-        padding-inline: 32px;
         margin-top: 32px;
     }
 }

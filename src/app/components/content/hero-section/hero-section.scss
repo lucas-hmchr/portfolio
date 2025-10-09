@@ -276,6 +276,7 @@ section {
 
                     >.name-headline {
                         font-size: 36px;
+                        margin-bottom: 16px;
                     }
 
                     >.fd-headline {
@@ -313,5 +314,15 @@ section {
             }
         }
     }
+}
 
+@media (max-height: 690px) {
+    section {
+        height: calc(100dvh - 90px);
+    }
+
+    .name-headline {
+        font-size: 32px!important;
+        margin-bottom: 16px;
+    }
 }

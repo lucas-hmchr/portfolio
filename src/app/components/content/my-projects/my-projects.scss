@@ -318,3 +318,9 @@ section {
         }
     }
 }
+
+@media (max-height: 690px) {
+    section{
+        scroll-margin-top: 60px;
+    }
+}

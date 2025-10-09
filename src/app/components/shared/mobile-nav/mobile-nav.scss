@@ -182,3 +182,26 @@ button {
         }
     }
 }
+
+@media (max-height: 690px) {
+    header {
+        height: 90px;
+        justify-content: space-between;
+        padding: 12px;
+
+        >.logo {
+            font-size: 12px;
+
+            >img {
+                width: 40px;
+            }
+
+        }
+    }
+
+    button {
+        >img {
+            height: 32px;
+        }
+    }
+}

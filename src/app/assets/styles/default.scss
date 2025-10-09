@@ -25,12 +25,14 @@ html {
     box-sizing: border-box;
 }
 
+*, *::before, *::after { box-sizing: border-box; }
+
 body {
     margin: 0;
     font-family: 'Josefin Sans';
     background-color: var(--clr-primary-dark-grey);
     color: var(--clr-creme-white);
-    overflow-x: hidden;
+     overflow-x: clip;
 }
 
 h1 {

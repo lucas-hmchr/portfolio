@@ -1,12 +1,31 @@
+@import 'breakpoints';
+
 .scroll-button {
     background-color: transparent;
     border: 2px solid var(--clr-primary-blue);
-    padding: 16px 8px 16px 8px!important;
-    border-radius: 50px!important;
+    padding: 16px 8px 16px 8px !important;
+    border-radius: 50px !important;
     cursor: pointer;
     transition: 300ms ease-out;
 
-    &:hover{
+    &:hover {
         background-color: var(--clr-secondary-creme-white);
+    }
+}
+
+@include respond(sm) {
+    .scroll-button {
+        padding: 12px 6px 12px 6px !important;
+        border-radius: 50px !important;
+        cursor: pointer;
+        transition: 300ms ease-out;
+
+        &:hover {
+            background-color: var(--clr-secondary-creme-white);
+        }
+
+        >img{
+            height: 40px;
+        }
     }
 }
