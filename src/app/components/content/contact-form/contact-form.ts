@@ -3,11 +3,12 @@ import { BreakpointService } from '../../../services/breakpoint';
 import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
 import { FormsModule, NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-contact-form',
   standalone: true,
-  imports: [TranslocoModule, FormsModule],
+  imports: [TranslocoModule, FormsModule, RouterLink],
   templateUrl: './contact-form.html',
   styleUrl: './contact-form.scss'
 })

@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { LanguageSwitcher } from '../language-switcher/language-switcher';
 import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-menu-bar',
   standalone: true,
-  imports: [LanguageSwitcher, TranslocoModule],
+  imports: [LanguageSwitcher, TranslocoModule, RouterLink],
   templateUrl: './menu-bar.html',
   styleUrl: './menu-bar.scss'
 })

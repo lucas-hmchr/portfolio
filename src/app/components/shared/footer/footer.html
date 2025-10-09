@@ -1,7 +1,7 @@
 <footer>
     <div class="footer-content">
         @if (bp.device() === 'md' || bp.device() === 'sm' || bp.device() === 'xs' || bp.device() === 'xxs') {
-        <a class="logo" href="/">
+        <a class="logo" routerLink="/" aria-label="Zur Startseite">
             <img src="/images/hero_section/logo_icon_dark.svg" alt="">
             <span class="f-anta">L.Hamacher</span>
             <span>developer</span>
@@ -13,19 +13,19 @@
                 class="linkedin" target="_blank"></a>
         </div>
         <div class="legal-notice-container">
-            <a href="/legal-notice">{{ 'footer.legal-notice' | transloco}}</a>
+            <a routerLink="legal-notice">{{ 'footer.legal-notice' | transloco }}</a>
             <span>© Lucas Hamacher 2025</span>
         </div>
         } @else {
         <div class="legal-notice-container">
-            <a href="/legal-notice">{{ 'footer.legal-notice' | transloco}}</a>
+            <a routerLink="legal-notice">{{ 'footer.legal-notice' | transloco }}</a>
             <span>© Lucas Hamacher 2025</span>
         </div>
-        <div class="logo">
+        <a class="logo" routerLink="/" aria-label="Zur Startseite">
             <img src="/images/hero_section/logo_icon_dark.svg" alt="">
             <span class="f-anta">L.Hamacher</span>
             <span>developer</span>
-        </div>
+        </a>
         <div class="social-icons">
             <a href="https://github.com/lucas-hmchr" class="github" target="_blank"></a>
             <a href="mailto:lucashamacher01@gmail.com" class="mail"></a>

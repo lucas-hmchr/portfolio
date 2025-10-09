@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
 import { LanguageSwitcher } from '../language-switcher/language-switcher';
+import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-mobile-nav',
-  imports: [TranslocoModule, LanguageSwitcher],
+  imports: [TranslocoModule, LanguageSwitcher, RouterLink],
   templateUrl: './mobile-nav.html',
   styleUrl: './mobile-nav.scss'
 })
